@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe-toit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Container principal pour le contenu flou -->
+<div class="main-content">
+  <!-- Vidéo de fond -->
+  <video autoplay loop muted class="background-video">
+    <source src="ahay.mp4" type="video/mp4">
+  </video>
+
+  <!-- Slogan -->
+  <div class="slog">
+    <h1>Informe-toit</h1>
+    <h2>Ton repaire interactif entre informatique et logique</h2>
+    <!-- Boutons d'accueil -->
+    <div class="buttons">
+      <button class="btn1">Découvrir</button>
+      <button class="btn2">Jouer</button>
+    </div>
+  </div>
+
+  <!-- Bouton menu (hamburger) -->
+  <div class="btn3">
+    <button>≡</button>
+  </div>
+</div>
+
+<!-- Overlay de flou -->
+<div class="main-content-overlay"></div>
+
+<!-- Conteneur d'images -->
+<div id="character-image-container">
+  <img id="character-image" src="" alt="Image du personnage" />
+</div>
+
+<!-- Menu latéral -->
+<div id="sideMenu" class="side-menu">
+  <div class="nav-menu">
+    <button class="nav-btn" id="btn-personnages">Personnages</button>
+    <button class="nav-btn">Jouer</button>
+    <button class="nav-btn">Contact</button>
+    <button class="close-btn">×</button>
+  </div>
+  
+  <!-- Liste de personnages à l'intérieur du menu -->
+  <div id="character-list" style="display: none; padding: 1rem; color: white;">
+    <ul id="characters" style="list-style: none; padding: 0; margin-top: 1rem;">
+      <!-- JS remplira cette liste -->
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
