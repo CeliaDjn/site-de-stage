@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Informe-toit</title>
 <link rel="stylesheet" href="style.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 <!-- Container principal pour le contenu flou -->
 <div class="main-content">
   <!-- Vidéo de fond -->
   <video autoplay loop muted class="background-video">
-    <source src="ahay.mp4" type="video/mp4">
+    <source src="bleu.mp4" type="video/mp4">
   </video>
 
   <!-- Slogan -->
@@ -20,16 +23,170 @@
     <h2>Ton repaire interactif entre informatique et logique</h2>
     <!-- Boutons d'accueil -->
     <div class="buttons">
-      <button class="btn1">Découvrir</button>
+      <button class="btn1" onclick="document.getElementById('presentation').scrollIntoView({ behavior: 'smooth' });">Découvrir</button>
+
       <button class="btn2">Jouer</button>
     </div>
   </div>
 
   <!-- Bouton menu (hamburger) -->
   <div class="btn3">
-    <button>≡</button>
+  <button class="hamburger-btn">☰</button>
+</div>
+
+
+  <div class="page-content">
+    <!-- Ton vrai contenu scrollable -->
+     <section class="section" id="presentation">
+  <h2>Bienvenue sur Informe-toit</h2>
+  <p>
+    <strong>Informe-toit</strong> est un site interactif et éducatif qui met en lumière les grandes figures qui ont marqué l'histoire de l'informatique.
+  </p>
+  <p>
+    De <strong>Ada Lovelace</strong>, première programmeuse de l’histoire, à <strong>Linus Torvalds</strong>, créateur de Linux, en passant par le visionnaire <strong>Alan Turing</strong>, découvre ceux et celles qui ont révolutionné notre monde numérique.
+  </p>
+  <p>
+    Notre objectif est de rendre l’informatique accessible et passionnante, à travers des portraits inspirants, des anecdotes, et des mini-jeux pour apprendre en s’amusant.
+  </p>
+<section class="section character-section" id="ada-lovelace">
+  <div class="character-content">
+    <div class="character-text">
+      <h2>Ada Lovelace</h2>
+      <p><strong>Métier(s) : Mathématicienne, écrivaine scientifique</strong></p>
+
+      <p><strong>Date de naissance :</strong> 10 décembre 1815</p>
+<p><strong>Date de décès :</strong> 27 novembre 1852</p>
+
+      <p>
+        Augusta Ada King, comtesse de Lovelace, est souvent reconnue comme la première programmeuse informatique de l'histoire. Fille du poète Lord Byron, elle a été fascinée dès son plus jeune âge par les mathématiques et les sciences. Elle collabora avec le mathématicien Charles Babbage sur sa machine analytique, un ancêtre théorique de l’ordinateur.
+      </p>
+      <p>
+        Ce qui distingue Ada, ce sont ses notes détaillées dans lesquelles elle propose une méthode pour faire calculer à la machine une suite de nombres : c’est ce qui est considéré comme le tout premier algorithme destiné à être exécuté par une machine. Elle voyait au-delà du simple calcul, anticipant les possibilités de traitement de symboles et de sons — une vision très en avance sur son temps.
+      </p>
+      <p><strong>Principales contributions :</strong></p>
+      <ul>
+        <li>Première à concevoir un algorithme pour une machine</li>
+        <li>Travail de traduction et d'annotation sur la machine analytique</li>
+        <li>Visionnaire sur l’avenir des machines computationnelles</li>
+      </ul>
+      <blockquote>
+        “L’imagination est la faculté de découvrir des merveilles à travers les nombres.”  
+        <br>— Ada Lovelace
+      </blockquote>
+    </div>
+    <div class="character-image">
+      <img src="images/ada.jpeg" alt="Portrait d'Ada Lovelace">
+    </div>
+  </div>
+</section>
+
+
+<section class="section character-section" id="alan-turing">
+  <div class="character-content">
+    <div class="character-text">
+      <h2>Alan Turing</h2>
+      <p><strong>Métier(s) :Mathématicien, logicien, cryptanalyste, informaticien</strong> </p>
+
+      <p><strong>Date de naissance :</strong> 23 juin 1912</p>
+      <p><strong>Date de décès :</strong> 7 juin 1954</p>
+      <p>
+        Alan Turing est l’un des plus grands mathématiciens et logiciens du XXe siècle, largement considéré comme le père de l’informatique moderne. Il a posé les bases théoriques de l’ordinateur avec sa célèbre “machine de Turing”, un modèle abstrait capable de simuler n’importe quel algorithme.
+      </p>
+      <p>
+        Pendant la Seconde Guerre mondiale, il a joué un rôle crucial dans la victoire des Alliés en brisant le code de la machine allemande Enigma, permettant de déchiffrer les communications militaires ennemies. Son travail à Bletchley Park a sauvé des millions de vies.
+      </p>
+      <p>
+        Malgré ses accomplissements, il fut persécuté pour son homosexualité, alors illégale au Royaume-Uni. Il mourut dans des circonstances tragiques, officiellement par suicide, mais son héritage est immense.
+      </p>
+      <p><strong>Principales contributions :</strong></p>
+      <ul>
+        <li>Création du concept de machine de Turing</li>
+        <li>Travaux sur l’intelligence artificielle (test de Turing)</li>
+        <li>Décryptage des codes nazis pendant la guerre</li>
+      </ul>
+      <blockquote>
+        “Nous ne pouvons jamais prévoir ce que fera une machine. C’est ce qui les rend si fascinantes.”  
+        <br>— Alan Turing
+      </blockquote>
+    </div>
+    <div class="character-image">
+      <img src="images/alan.png" alt="Portrait de Alan Turing">
+    </div>
+  </div>
+</section>
+
+
+<section class="section character-section" id="linus-torvalds">
+  <div class="character-content">
+    <div class="character-text">
+      <h2>Linus Torvalds</h2>
+      <p><strong>Métier(s) :Ingénieur logiciel, développeur, architecte système</strong> </p>
+      <p><strong>Date de naissance :</strong> 28 décembre 1969</p>
+      <p>
+        Linus Torvalds est un ingénieur finlandais mondialement connu pour avoir créé le noyau Linux en 1991. Ce noyau est au cœur de systèmes d'exploitation open source utilisés aujourd’hui dans des millions de serveurs, ordinateurs, smartphones et objets connectés.
+      </p>
+      <p>
+        Il a démarré Linux comme un projet personnel, publié sous licence libre. Cette initiative a donné naissance à une révolution : le mouvement open source. Son approche collaborative a inspiré des milliers de développeurs à travers le monde à contribuer à ce projet.
+      </p>
+      <p>
+        Torvalds a également créé Git, un système de gestion de versions très utilisé dans le développement logiciel, qui a transformé la manière dont les projets sont gérés.
+      </p>
+      <p><strong>Principales contributions :</strong></p>
+      <ul>
+        <li>Création du noyau Linux</li>
+        <li>Fondateur de Git, outil de gestion de code</li>
+        <li>Promotion du logiciel libre et de la collaboration ouverte</li>
+      </ul>
+      <blockquote>
+        “Talk is cheap. Show me the code.”  
+        <br>— Linus Torvalds
+      </blockquote>
+    </div>
+    <div class="character-image">
+      <img src="images/linus.png" alt="Portrait de Linus Torvalds">
+    </div>
+  </div>
+</section>
+
+
+<section class="section character-section" id="grace-hopper">
+  <div class="character-content">
+    <div class="character-text">
+      <h2>Grace Hopper</h2>
+      <p><strong>Métier(s) :</strong> Informaticienne, amirale de la marine, enseignante</p>
+
+      <p><strong>Date de naissance :</strong> 9 décembre 1906</p>
+      <p><strong>Date de décès :</strong> 1er janvier 1992</p>
+      <p>
+        Grace Hopper était une informaticienne et amirale de la marine américaine. Elle fut l’une des premières programmeuses du Harvard Mark I, un des tout premiers ordinateurs, et est surtout connue pour avoir développé le premier compilateur, rendant possible les langages de programmation proches du langage humain.
+      </p>
+      <p>
+        Elle a contribué à la création du COBOL, un langage de programmation encore utilisé aujourd’hui dans de nombreux systèmes bancaires. Hopper est aussi célèbre pour avoir inventé le terme "bug informatique", après avoir trouvé un papillon coincé dans un relais.
+      </p>
+      <p>
+        Femme d’action et de vision, elle a formé des générations de techniciens en informatique et a laissé une empreinte indélébile sur le domaine de la programmation.
+      </p>
+      <p><strong>Principales contributions :</strong></p>
+      <ul>
+        <li>Invention du premier compilateur</li>
+        <li>Co-création du langage COBOL</li>
+        <li>Promotion de la programmation accessible</li>
+      </ul>
+      <blockquote>
+        “The most dangerous phrase in the language is: ‘We’ve always done it this way.’”  
+        <br>— Grace Hopper
+      </blockquote>
+    </div>
+    <div class="character-image">
+      <img src="images/grace.png" alt="Portrait de Grace Hopper">
+    </div>
+  </div>
+</section>
+
   </div>
 </div>
+
+
 
 <!-- Overlay de flou -->
 <div class="main-content-overlay"></div>
@@ -54,7 +211,53 @@
       <!-- JS remplira cette liste -->
     </ul>
   </div>
+  <div id="contact-info" style="display: none; padding: 1rem; color: white;">
+  <p style="margin-bottom: 1rem;">
+  Pour toute question, suggestion ou collaboration, n’hésitez pas à nous contacter :
+</p>
+
+  <div style="margin-bottom: 1.5rem;">
+    <h4>Amouchas Ahcene</h4>
+    <p><i class="fas fa-envelope fa-2x"></i> <a href="mailto:amouchasahcene11@gmail.com" style="color: #00bfff;">amouchasahcene11@gmail.com</a></p>
+    <p><i class="fab fa-github fa-2x"></i> <a href="https://github.com/ahcene-11" target="_blank" style="color: #00bfff;">github.com/ahcene-11</a></p>
+    <p><i class="fab fa-linkedin fa-2x"></i> <a href="https://www.linkedin.com/in/ahc%C3%A8ne-amouchas-a3037a327/" target="_blank" style="color: #00bfff;">www.linkedin.com</a></p>
+  </div>
+
+  <div>
+    <h4>Djouani Celia</h4>
+    <p><i class="fas fa-envelope fa-2x"></i> <a href="mailto:emma.lefevre@email.com" style="color: #00bfff;">emma.lefevre@email.com</a></p>
+    <p><i class="fab fa-github fa-2x"></i> <a href="https://github.com/emmlefevre" target="_blank" style="color: #00bfff;">github.com/emmlefevre</a></p>
+    <p><i class="fab fa-linkedin fa-2x"></i> <a href="https://www.linkedin.com/in/emmlefevre" target="_blank" style="color: #00bfff;">linkedin.com/in/emmlefevre</a></p>
+  </div>
 </div>
+
+
+</div>
+<footer>
+  <div class="social">Follow us
+    <a href="https://www.linkedin.com/in/tonprofil" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://github.com/tonprofil" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+  </div>
+  
+  <div class="footer-container">
+    <hr />
+    <p>&copy; 2025 Informe-toit. Tous droits réservés.</p>
+    <hr />
+    <p>
+  <a href="mentions.html">Mentions légales</a> |
+  <a href="rgpd.html">Politique de confidentialité</a> |
+  <a href="accessibilite.html">Accessibilité</a>
+</p>
+
+    <hr />
+    <p>Site réalisé à but pédagogique - IUT Info</p>
+  </div>
+</footer>
+
 
 <script src="script.js"></script>
 </body>

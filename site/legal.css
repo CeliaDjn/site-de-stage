@@ -1,0 +1,62 @@
+/* Base générale */
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Titres principaux */
+h1, h2 {
+  color: #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* Sous-titres */
+h3, h4 {
+  color: #ccc;
+  margin-top: 1.5rem;
+}
+
+/* Paragraphes */
+p {
+  margin: 1rem 0;
+}
+
+/* Liens */
+a {
+  color: #FFEE66;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Listes */
+ul {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Séparateurs horizontaux */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 2rem 0;
+}
