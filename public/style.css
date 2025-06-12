@@ -1,7 +1,70 @@
+#quiz-list ul li {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: transparent;
+}
+
+#quiz-list ul li:hover {
+  color: #474AFF; /* Couleur différente pour les quiz */
+  background: transparent;
+}
+
+#quiz-list ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  background: transparent;
+}
+
+#quiz-list ul li:hover a {
+  color: #474AFF;
+}
+
+/* Conteneur d'image pour les quiz */
+#quiz-image-container {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 998;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#quiz-image-container.show {
+  opacity: 1;
+}
+
+#quiz-image-container img {
+
+  border-radius: 20px;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+#quiz-image {
+  width: 1200px;
+  height: 1200px;
+}
+
 /* Reset général pour éviter les fonds blancs */
 * {
   box-sizing: border-box;
 }
+
 
 body {
   background-image: url('ahay.mp4');
@@ -304,7 +367,8 @@ button:not(.nav-btn):hover::before {
 }
 
 #presentation{
-background: rgba(0, 0, 0, 0.5);
+background: rgba(0, 0, 0, 0.9);
+border-radius: 40px;
 
 }
 
@@ -313,8 +377,9 @@ background: rgba(0, 0, 0, 0.5);
 }
 
 .character-section {
-  padding: 4rem 2rem;
+  padding-top:10%;
   color: white;
+  margin:auto;
 }
 
 .character-content {
@@ -324,9 +389,10 @@ background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
-background: rgba(0, 0, 0, 0.5);
+background: rgba(0, 0, 0, 0.9);
+border-radius: 40px;
 
 }
 
