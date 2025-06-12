@@ -21,22 +21,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 <div class="grid-bg">
-  <form method="POST" class="quiz-box">
+  <video autoplay loop muted class="background-video">
+    <source src="neon.mp4" type="video/mp4">
+  </video>
+  <form method="POST" class="my-form">
     <h1>DÉBUTANT LOGIQUE</h1>
     <p>Qu’est-ce que tu penses de ce test ?</p>
 
-    <div class="option">
-      <input type="radio" name="reponse" value="a" id="opt1" required>
-      <label for="opt1">J’aime pas</label>
-    </div>
-    <div class="option">
-      <input type="radio" name="reponse" value="b" id="opt2">
-      <label for="opt2">J’adore</label>
-    </div>
-    <div class="option">
-      <input type="radio" name="reponse" value="c" id="opt3">
-      <label for="opt3">J’adore</label>
-    </div>
+     <div>
+    <input id="check-1" type="checkbox" />
+    <label for="check-1">Checkbox 1</label>
+  </div>
+  <div>
+    <input checked="" id="check-2" type="checkbox" />
+    <label for="check-2">Checkbox 2</label>
+  </div>
+  <div>
+    <input id="check-3" type="checkbox" />
+    <label for="check-3">Checkbox 3</label>
+  </div>
+  <div>
+    <input id="check-4" type="checkbox" />
+    <label for="check-4">Checkbox 4</label>
+  </div>
 
     <button class="btn" type="submit">Valider</button>
 
@@ -45,5 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php endif; ?>
   </form>
 </div>
+  
+
+
+  
 </body>
 </html>
