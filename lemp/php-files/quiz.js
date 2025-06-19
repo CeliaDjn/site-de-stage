@@ -1,5 +1,6 @@
 const quizDiv = document.getElementById('quiz');
 const questions = JSON.parse(quizDiv.dataset.questions);
+const niveau = quizDiv.dataset.niveau; // ✅ On récupère le niveau ici
 let current = 0;
 
 function showQuestion(index) {
@@ -8,7 +9,7 @@ function showQuestion(index) {
         return;
     }
 
-    const q = questions[index];
+    const q = questions[index]; // ✅ On récupère la question actuelle
     quizDiv.innerHTML = `
         <p>${q.question}</p>
         ${['A', 'B', 'C', 'D'].map(opt => `
@@ -28,7 +29,11 @@ function showQuestion(index) {
         fetch('check.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id: q.id, answer: selected.value })
+            body: JSON.stringify({
+                id: q.id,                    // ✅ ID de la question
+                answer: selected.value,     // ✅ Réponse choisie
+                niveau: niveau              // ✅ Niveau récupéré au début
+            })
         })
         .then(res => res.json())
         .then(res => {
