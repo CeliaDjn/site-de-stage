@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quiz - Informe-toit</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="selection-quiz.css">
 <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -12,26 +12,20 @@
 <!-- Container principal pour le contenu -->
 <div class="main-content">
   <!-- Vidéo de fond -->
-  <video autoplay loop muted class="background-video">
-    <source src="neon.mp4" type="video/mp4">
+  
+<video autoplay loop muted class="background-video">
+    <source src="bleu.mp4" type="video/mp4">
   </video>
-
   <!-- Header avec bouton retour -->
-  <div class="header">
-    <button class="back-btn" onclick="window.location.href='index.html'">
-      <i class="fas fa-arrow-left"></i> Retour
+   <button class="back-btn" onclick="window.location.href='index.html'">
+      <i class="fas fa-arrow-left"></i>
     </button>
+  <div class="header">
     <h1>Choisissez votre défi</h1>
   </div>
 
   <div class="page-content">
-    <!-- Section d'introduction -->
-    <section class="section" id="intro">
-      <h2>Testez vos connaissances</h2>
-      <p>
-        Prêt à relever le défi ? Choisissez le niveau qui vous correspond et découvrez à quel point vous maîtrisez l'univers de l'informatique et des personnages qui l'ont façonné.
-      </p>
-    </section>
+   
 
     <!-- Quiz Facile -->
     <section class="section quiz-section" id="quiz-facile">
@@ -56,12 +50,12 @@
             <li>Notions de base en informatique</li>
           </ul>
             <button class="quiz-btn easy" onclick="window.location.href='quiz.php?niveau=facile'">
-                Commencer le Quiz Facile
+                 <span>Commencer le Quiz Facile</span>
             </button>
         </div>
         <div class="quiz-image">
           <div class="quiz-icon easy-icon">
-            <i class="fas fa-seedling"></i>
+            <i class="fas fa-crown"></i>
           </div>
         </div>
       </div>
@@ -90,12 +84,12 @@
             <li>Évolution des technologies</li>
           </ul>
 <button class="quiz-btn medium" onclick="window.location.href='quiz.php?niveau=moyen'">
- Commencer le Quiz Moyen
+ <span>Commencer le Quiz Moyen</span>
 </button>
         </div>
         <div class="quiz-image">
           <div class="quiz-icon medium-icon">
-            <i class="fas fa-brain"></i>
+            <i class="fas fa-crown"></i>
           </div>
         </div>
       </div>
@@ -124,7 +118,7 @@
             <li>Impact à long terme et héritage</li>
           </ul>
 <button class="quiz-btn hard" onclick="window.location.href='quiz.php?niveau=difficile'"> 
-  sCommencer le Quiz Difficile
+  <span>Commencer le Quiz Difficile</span>
 </button>
         </div>
         <div class="quiz-image">

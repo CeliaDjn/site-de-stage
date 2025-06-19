@@ -355,7 +355,6 @@ button:not(.nav-btn):hover::before {
   position: relative;
   font-size: larger;
   font-family: 'Poppins', sans-serif;
-
   z-index: 1; /* pour être au-dessus de la vidéo */
   padding: 2rem;
   color: white;
@@ -366,8 +365,9 @@ button:not(.nav-btn):hover::before {
 }
 
 #presentation{
-background: rgba(0, 0, 0, 0.9);
-border-radius: 40px;
+border-radius: 30px;
+  background: linear-gradient(145deg, #2b2b2b, #000000);
+
 
 }
 
@@ -390,7 +390,8 @@ border-radius: 40px;
   gap: 2rem;
   max-width: 1300px;
   margin: auto;
-background: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(145deg, #2b2b2b, #000000);
+
 border-radius: 40px;
 
 }
