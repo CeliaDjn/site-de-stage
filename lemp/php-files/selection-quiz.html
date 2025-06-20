@@ -1,152 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz - Informe-toit</title>
-<link rel="stylesheet" href="selection-quiz.css">
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-<!-- Container principal pour le contenu -->
-<div class="main-content">
-  <!-- Vidéo de fond -->
-  
-<video autoplay loop muted class="background-video">
-    <source src="bleu.mp4" type="video/mp4">
-  </video>
-  <!-- Header avec bouton retour -->
-   <button class="back-btn" onclick="window.location.href='index.html'">
-      <i class="fas fa-arrow-left"></i>
-    </button>
-  <div class="header">
-    <h1>Choisissez votre défi</h1>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Informe-toit</title>
+    <link rel="stylesheet" href="selection-quiz.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Header avec bouton retour -->
+      <div class="header">
+        <button
+          class="back-btn"
+          onclick="window.location.href='index.html'"
+          aria-label="Retour en arrière"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h1>Choisissez votre défi</h1>
+      </div>
+    </header>
+    <main>
+      <!-- Container principal pour le contenu -->
+      <div class="main-content">
+        <!-- Vidéo de fond -->
 
-  <div class="page-content">
-   
+        <video autoplay loop muted class="background-video">
+          <source src="bleu.mp4" type="video/mp4" />
+        </video>
 
-    <!-- Quiz Facile -->
-    <section class="section quiz-section" id="quiz-facile">
-      <div class="quiz-content">
-        <div class="quiz-text">
-          <h2>Quiz Facile</h2>
-          <p><strong>Niveau : Débutant</strong></p>
-          <p><strong>Durée : 5 minutes</strong></p>
-          <p><strong>Questions : 10</strong></p>
-          
-          <p>
-            Parfait pour commencer ! Ce quiz vous permet de découvrir les bases de l'informatique et les figures emblématiques qui ont marqué son histoire. 
-          </p>
-          <p>
-            Questions sur les dates importantes, les inventions principales et les contributions majeures d'Ada Lovelace, Alan Turing, Grace Hopper et Linus Torvalds.
-          </p>
-          <p><strong>Thèmes abordés :</strong></p>
-          <ul>
-            <li>Dates de naissance et principales réalisations</li>
-            <li>Inventions et découvertes importantes</li>
-            <li>Citations célèbres</li>
-            <li>Notions de base en informatique</li>
-          </ul>
-            <button class="quiz-btn easy" onclick="window.location.href='quiz.php?niveau=facile'">
-                 <span>Commencer le Quiz Facile</span>
-            </button>
-        </div>
-        <div class="quiz-image">
-          <div class="quiz-icon easy-icon">
-            <i class="fas fa-crown"></i>
-          </div>
+        <div class="page-content">
+          <!-- Quiz Facile -->
+          <section class="section quiz-section" id="quiz-facile">
+            <div class="quiz-content">
+              <div class="quiz-text">
+                <h2>Quiz Facile</h2>
+                <p><strong>Niveau : Débutant</strong></p>
+                <p><strong>Durée : 5 minutes</strong></p>
+                <p><strong>Questions : 10</strong></p>
+
+                <p>
+                  Parfait pour commencer ! Ce quiz vous permet de découvrir les
+                  bases de l'informatique et les figures emblématiques qui ont
+                  marqué son histoire.
+                </p>
+                <p>
+                  Questions sur les dates importantes, les inventions
+                  principales et les contributions majeures d'Ada Lovelace, Alan
+                  Turing, Grace Hopper et Linus Torvalds.
+                </p>
+                <p><strong>Thèmes abordés :</strong></p>
+                <ul>
+                  <li>Dates de naissance et principales réalisations</li>
+                  <li>Inventions et découvertes importantes</li>
+                  <li>Citations célèbres</li>
+                  <li>Notions de base en informatique</li>
+                </ul>
+                <button
+                  class="quiz-btn easy"
+                  onclick="window.location.href='quiz.php?niveau=facile'"
+                >
+                  <span>Commencer le Quiz Facile</span>
+                </button>
+              </div>
+              <div class="quiz-image">
+                <div class="quiz-icon easy-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Quiz Moyen -->
+          <section class="section quiz-section" id="quiz-moyen">
+            <div class="quiz-content">
+              <div class="quiz-text">
+                <h2>Quiz Moyen</h2>
+                <p><strong>Niveau : Intermédiaire</strong></p>
+                <p><strong>Durée : 8 minutes</strong></p>
+                <p><strong>Questions : 15</strong></p>
+
+                <p>
+                  Vous avez des bases solides ? Ce quiz va plus loin dans les
+                  détails techniques et historiques. Préparez-vous à des
+                  questions plus précises !
+                </p>
+                <p>
+                  Approfondissement des connaissances sur les technologies, les
+                  contextes historiques et les impacts des innovations de nos
+                  personnages.
+                </p>
+                <p><strong>Thèmes abordés :</strong></p>
+                <ul>
+                  <li>Détails techniques des inventions</li>
+                  <li>Contexte historique et social</li>
+                  <li>Collaborations et influences</li>
+                  <li>Évolution des technologies</li>
+                </ul>
+                <button
+                  class="quiz-btn medium"
+                  onclick="window.location.href='quiz.php?niveau=moyen'"
+                >
+                  <span>Commencer le Quiz Moyen</span>
+                </button>
+              </div>
+              <div class="quiz-image">
+                <div class="quiz-icon medium-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Quiz Difficile -->
+          <section class="section quiz-section" id="quiz-difficile">
+            <div class="quiz-content">
+              <div class="quiz-text">
+                <h2>Quiz Difficile</h2>
+                <p><strong>Niveau : Expert</strong></p>
+                <p><strong>Durée : 12 minutes</strong></p>
+                <p><strong>Questions : 20</strong></p>
+
+                <p>
+                  Réservé aux vrais passionnés ! Ce quiz mettra à l'épreuve vos
+                  connaissances les plus pointues sur l'histoire de
+                  l'informatique.
+                </p>
+                <p>
+                  Questions très spécifiques, anecdotes peu connues et
+                  connexions complexes entre les différents personnages et leurs
+                  œuvres.
+                </p>
+                <p><strong>Thèmes abordés :</strong></p>
+                <ul>
+                  <li>Détails biographiques précis</li>
+                  <li>Aspects techniques avancés</li>
+                  <li>Anecdotes et faits peu connus</li>
+                  <li>Impact à long terme et héritage</li>
+                </ul>
+                <button
+                  class="quiz-btn hard"
+                  onclick="window.location.href='quiz.php?niveau=difficile'"
+                >
+                  <span>Commencer le Quiz Difficile</span>
+                </button>
+              </div>
+              <div class="quiz-image">
+                <div class="quiz-icon hard-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-
-    <!-- Quiz Moyen -->
-    <section class="section quiz-section" id="quiz-moyen">
-      <div class="quiz-content">
-        <div class="quiz-text">
-          <h2>Quiz Moyen</h2>
-          <p><strong>Niveau : Intermédiaire</strong></p>
-          <p><strong>Durée : 8 minutes</strong></p>
-          <p><strong>Questions : 15</strong></p>
-          
-          <p>
-            Vous avez des bases solides ? Ce quiz va plus loin dans les détails techniques et historiques. Préparez-vous à des questions plus précises !
-          </p>
-          <p>
-            Approfondissement des connaissances sur les technologies, les contextes historiques et les impacts des innovations de nos personnages.
-          </p>
-          <p><strong>Thèmes abordés :</strong></p>
-          <ul>
-            <li>Détails techniques des inventions</li>
-            <li>Contexte historique et social</li>
-            <li>Collaborations et influences</li>
-            <li>Évolution des technologies</li>
-          </ul>
-<button class="quiz-btn medium" onclick="window.location.href='quiz.php?niveau=moyen'">
- <span>Commencer le Quiz Moyen</span>
-</button>
-        </div>
-        <div class="quiz-image">
-          <div class="quiz-icon medium-icon">
-            <i class="fas fa-crown"></i>
-          </div>
-        </div>
+    </main>
+    <footer>
+      
+      <div class="footer-container">
+        <hr />
+        <p>&copy; 2025 Informe-toit. Tous droits réservés.</p>
+        <hr />
+        <p>
+          <a href="mentions.html">Mentions légales</a> |
+          <a href="rgpd.html">Politique de confidentialité</a> | 
+          <a href="accessibilite.html">Accessibilité</a>
+        </p>
+        <hr />
+        <p>Site réalisé à but pédagogique - IUT Info</p>
       </div>
-    </section>
-
-    <!-- Quiz Difficile -->
-    <section class="section quiz-section" id="quiz-difficile">
-      <div class="quiz-content">
-        <div class="quiz-text">
-          <h2>Quiz Difficile</h2>
-          <p><strong>Niveau : Expert</strong></p>
-          <p><strong>Durée : 12 minutes</strong></p>
-          <p><strong>Questions : 20</strong></p>
-          
-          <p>
-            Réservé aux vrais passionnés ! Ce quiz mettra à l'épreuve vos connaissances les plus pointues sur l'histoire de l'informatique.
-          </p>
-          <p>
-            Questions très spécifiques, anecdotes peu connues et connexions complexes entre les différents personnages et leurs œuvres.
-          </p>
-          <p><strong>Thèmes abordés :</strong></p>
-          <ul>
-            <li>Détails biographiques précis</li>
-            <li>Aspects techniques avancés</li>
-            <li>Anecdotes et faits peu connus</li>
-            <li>Impact à long terme et héritage</li>
-          </ul>
-<button class="quiz-btn hard" onclick="window.location.href='quiz.php?niveau=difficile'"> 
-  <span>Commencer le Quiz Difficile</span>
-</button>
-        </div>
-        <div class="quiz-image">
-          <div class="quiz-icon hard-icon">
-            <i class="fas fa-crown"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-container">
-    <hr />
-    <p>&copy; 2025 Informe-toit. Tous droits réservés.</p>
-    <hr />
-    <p>
-      <a href="index.html">Accueil</a> |
-      <a href="mentions.html">Mentions légales</a> |
-      <a href="rgpd.html">Politique de confidentialité</a>
-    </p>
-    <hr />
-    <p>Site réalisé à but pédagogique - IUT Info</p>
-  </div>
-</footer>
-
-
-
-</body>
+    </footer>
+  </body>
 </html>
