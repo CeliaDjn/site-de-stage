@@ -1,68 +1,71 @@
-const menuBtn = document.querySelector('.btn3');
-const closeBtn = document.querySelector('.close-btn');
-const sideMenu = document.getElementById('sideMenu');
-const navButtons = document.querySelectorAll('.nav-btn');
-const characterList = document.getElementById('character-list');
-const charactersUl = document.getElementById('characters');
-const mainContent = document.querySelector('.main-content');
-const overlay = document.querySelector('.main-content-overlay');
+const menuBtn = document.querySelector(".btn3");
+const closeBtn = document.querySelector(".close-btn");
+const sideMenu = document.getElementById("sideMenu");
+const navButtons = document.querySelectorAll(".nav-btn");
+const characterList = document.getElementById("character-list");
+const charactersUl = document.getElementById("characters");
+const mainContent = document.querySelector(".main-content");
+const overlay = document.querySelector(".main-content-overlay");
 
 // Liste de personnages
 const characters = [
   "ADA LOVELACE",
-  "ALAN TURING", 
+  "ALAN TURING",
   "GRACE HOPPER",
-  "LINUS TORVALDS"
+  "LINUS TORVALDS",
 ];
 
 // Liste de quiz
-const quizzes = [
-  "QUIZ FACILE",
-  "QUIZ MOYEN",
-  "QUIZ DIFFICILE"
-];
+const quizzes = ["QUIZ FACILE", "QUIZ MOYEN", "QUIZ DIFFICILE"];
 
-menuBtn.addEventListener('click', () => {
-  sideMenu.classList.add('open');
-  menuBtn.classList.add('hide');
+// Mapping des quiz avec leurs niveaux
+const quizMap = {
+  "QUIZ FACILE": "facile",
+  "QUIZ MOYEN": "moyen",
+  "QUIZ DIFFICILE": "difficile",
+};
+
+menuBtn.addEventListener("click", () => {
+  sideMenu.classList.add("open");
+  menuBtn.classList.add("hide");
   // Ajouter l'effet de flou
-  overlay.classList.add('active');
+  overlay.classList.add("active");
 });
 
-closeBtn.addEventListener('click', () => {
-  sideMenu.classList.remove('open');
-  menuBtn.classList.remove('hide');
+closeBtn.addEventListener("click", () => {
+  sideMenu.classList.remove("open");
+  menuBtn.classList.remove("hide");
   characterList.style.display = "none";
-  document.getElementById('quiz-list').style.display = "none";
+  document.getElementById("quiz-list").style.display = "none";
   hideCharacterImage();
   hideQuizImage();
   // Retirer l'effet de flou
-  mainContent.classList.remove('blurred');
-  overlay.classList.remove('active');
+  mainContent.classList.remove("blurred");
+  overlay.classList.remove("active");
 });
 
 // Fermer le menu si on clique sur l'overlay
-overlay.addEventListener('click', () => {
-  sideMenu.classList.remove('open');
-  menuBtn.classList.remove('hide');
+overlay.addEventListener("click", () => {
+  sideMenu.classList.remove("open");
+  menuBtn.classList.remove("hide");
   characterList.style.display = "none";
-  document.getElementById('quiz-list').style.display = "none";
+  document.getElementById("quiz-list").style.display = "none";
   hideCharacterImage();
   hideQuizImage();
-  mainContent.classList.remove('blurred');
-  overlay.classList.remove('active');
+  mainContent.classList.remove("blurred");
+  overlay.classList.remove("active");
 });
 
-navButtons.forEach(button => {
-  button.addEventListener('click', () => {
+navButtons.forEach((button) => {
+  button.addEventListener("click", () => {
     // Style actif
-    navButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    
+    navButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
     if (button.textContent === "Personnages") {
       showCharacterList();
       document.getElementById("contact-info").style.display = "none";
-      document.getElementById('quiz-list').style.display = "none";
+      document.getElementById("quiz-list").style.display = "none";
       hideQuizImage();
     } else if (button.textContent === "Jouer") {
       showQuizList();
@@ -72,12 +75,12 @@ navButtons.forEach(button => {
     } else if (button.textContent === "Contact") {
       document.getElementById("contact-info").style.display = "block";
       characterList.style.display = "none";
-      document.getElementById('quiz-list').style.display = "none";
+      document.getElementById("quiz-list").style.display = "none";
       hideCharacterImage();
       hideQuizImage();
     } else {
       characterList.style.display = "none";
-      document.getElementById('quiz-list').style.display = "none";
+      document.getElementById("quiz-list").style.display = "none";
       document.getElementById("contact-info").style.display = "none";
       hideCharacterImage();
       hideQuizImage();
@@ -87,25 +90,25 @@ navButtons.forEach(button => {
 
 function showCharacterList() {
   charactersUl.innerHTML = "";
-  
-  characters.forEach(name => {
-    const li = document.createElement('li');
-    const link = document.createElement('a');
-    
+
+  characters.forEach((name) => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+
     // Normalise le nom pour créer un ID propre
-    const id = name.toLowerCase().replace(/\s+/g, '-'); // ex: "Alan Turing" -> "alan-turing"
+    const id = name.toLowerCase().replace(/\s+/g, "-"); // ex: "Alan Turing" -> "alan-turing"
     link.href = `#${id}`;
     link.textContent = name;
 
     // Hover image pour les personnages
-    link.addEventListener('mouseenter', () => showCharacterImage(name));
-    link.addEventListener('mouseleave', hideCharacterImage);
-    link.addEventListener('click', (e) => {
+    link.addEventListener("mouseenter", () => showCharacterImage(name));
+    link.addEventListener("mouseleave", hideCharacterImage);
+    link.addEventListener("click", (e) => {
       // Fermer le menu après le clic
-      sideMenu.classList.remove('open');
-      menuBtn.classList.remove('hide');
-      overlay.classList.remove('active');
-      mainContent.classList.remove('blurred');
+      sideMenu.classList.remove("open");
+      menuBtn.classList.remove("hide");
+      overlay.classList.remove("active");
+      mainContent.classList.remove("blurred");
       characterList.style.display = "none";
       hideCharacterImage();
     });
@@ -113,19 +116,20 @@ function showCharacterList() {
     li.appendChild(link);
     charactersUl.appendChild(li);
   });
-  
+
   characterList.style.display = "block";
 }
 
 function showQuizList() {
-  const quizUl = document.getElementById('quizzes');
+  const quizUl = document.getElementById("quizzes");
   quizUl.innerHTML = "";
 
-  quizzes.forEach(name => {
-    const li = document.createElement('li');
-    const link = document.createElement('a');
+  quizzes.forEach((name) => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
 
-    link.href = 'quiz.php';
+    const niveau = quizMap[name];
+    link.href = `quiz.php?niveau=${niveau}`;
     link.textContent = name;
     li.appendChild(link);
     quizUl.appendChild(li);
@@ -136,28 +140,27 @@ function showQuizList() {
   const imageElement = document.getElementById("quiz-image");
 
   imageElement.src = "images/brain.png";
-  imageContainer.classList.add('show');
+  imageContainer.classList.add("show");
 
   // Affiche la section contenant la liste
-  document.getElementById('quiz-list').style.display = "block";
+  document.getElementById("quiz-list").style.display = "block";
 }
 
 function showCharacterImage(name) {
   const imageContainer = document.getElementById("character-image-container");
   const imageElement = document.getElementById("character-image");
-  
+
   // Mapping des noms avec les images
   const imageMap = {
     "LINUS TORVALDS": "images/linus.png",
-    "ADA LOVELACE": "images/ada.jpeg", 
+    "ADA LOVELACE": "images/ada.jpeg",
     "ALAN TURING": "images/alan.png",
-    "GRACE HOPPER": "images/grace.png"
+    "GRACE HOPPER": "images/grace.png",
   };
-  
-  
+
   if (imageMap[name]) {
     imageElement.src = imageMap[name];
-    imageContainer.classList.add('show');
+    imageContainer.classList.add("show");
   } else {
     console.log("Aucune image trouvée pour:", name);
   }
@@ -166,25 +169,24 @@ function showCharacterImage(name) {
 function hideCharacterImage() {
   const imageContainer = document.getElementById("character-image-container");
   const imageElement = document.getElementById("character-image");
-  
-  imageContainer.classList.remove('show');
+
+  imageContainer.classList.remove("show");
   // Petit délai avant de vider le src pour une transition plus fluide
   setTimeout(() => {
-    if (!imageContainer.classList.contains('show')) {
+    if (!imageContainer.classList.contains("show")) {
       imageElement.src = "";
     }
   }, 300);
 }
 
-
 function hideQuizImage() {
   const imageContainer = document.getElementById("quiz-image-container");
   const imageElement = document.getElementById("quiz-image");
-  
-  imageContainer.classList.remove('show');
+
+  imageContainer.classList.remove("show");
   // Petit délai avant de vider le src pour une transition plus fluide
   setTimeout(() => {
-    if (!imageContainer.classList.contains('show')) {
+    if (!imageContainer.classList.contains("show")) {
       imageElement.src = "";
     }
   }, 300);
