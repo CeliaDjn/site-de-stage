@@ -34,130 +34,168 @@
           <source src="bleu.mp4" type="video/mp4" />
         </video>
 
-        <div class="page-content">
-          <!-- Quiz Facile -->
-          <section class="section quiz-section" id="quiz-facile">
-            <div class="quiz-content">
-              <div class="quiz-text">
-                <h2>Quiz Facile</h2>
-                <p><strong>Niveau : Débutant</strong></p>
-                <p><strong>Durée : 5 minutes</strong></p>
-                <p><strong>Questions : 10</strong></p>
+              <div class="page-content">
+        
+        <!-- Quiz Facile -->
 
-                <p>
-                  Parfait pour commencer ! Ce quiz vous permet de découvrir les
-                  bases de l'informatique et les figures emblématiques qui ont
-                  marqué son histoire.
-                </p>
-                <p>
-                  Questions sur les dates importantes, les inventions
-                  principales et les contributions majeures d'Ada Lovelace, Alan
-                  Turing, Grace Hopper et Linus Torvalds.
-                </p>
-                <p><strong>Thèmes abordés :</strong></p>
-                <ul>
-                  <li>Dates de naissance et principales réalisations</li>
-                  <li>Inventions et découvertes importantes</li>
-                  <li>Citations célèbres</li>
-                  <li>Notions de base en informatique</li>
-                </ul>
-                <button
-                  class="quiz-btn easy"
-                  onclick="window.location.href='quiz.php?niveau=facile'"
+        <section class="section quiz-section" id="quiz-facile">
+          <div class="quiz-content">
+            <div class="quiz-text">
+              <h2>Quiz Facile</h2>
+              <p>
+                <strong>Niveau :</strong>
+                <span aria-label="Niveau débutant">Débutant</span>
+              </p>
+              <p>
+                <strong>Durée :</strong>
+                <span aria-label="Durée estimée 2 minutes maximum"
+                  >2 minutes maximum</span
                 >
-                  <span>Commencer le Quiz Facile</span>
-                </button>
-              </div>
-              <div class="quiz-image">
-                <div class="quiz-icon easy-icon">
-                  <i class="fas fa-crown"></i>
-                </div>
+              </p>
+              <p>
+                <strong>Questions :</strong>
+                <span aria-label="6 questions au total">6</span>
+              </p>
+              <p>
+                Parfait pour commencer ! Ce quiz vous propose des questions
+                simples de logique et de culture générale adaptées à tous.
+              </p>
+              <p>
+                Questions de mathématiques simples, de logique, de couleurs et
+                de connaissances générales pour tester vos réflexes.
+              </p>
+              <button
+                class="quiz-btn easy"
+                onclick="window.location.href='quiz.php?niveau=facile'"
+                aria-describedby="quiz-description"
+                type="button"
+              >
+                <span>Commencer le Quiz Facile</span>
+              </button>
+              <div id="quiz-description" class="sr-only">
+                Lancer le quiz facile de 6 questions, durée estimée 2 minutes
               </div>
             </div>
-          </section>
-
-          <!-- Quiz Moyen -->
-          <section class="section quiz-section" id="quiz-moyen">
-            <div class="quiz-content">
-              <div class="quiz-text">
-                <h2>Quiz Moyen</h2>
-                <p><strong>Niveau : Intermédiaire</strong></p>
-                <p><strong>Durée : 8 minutes</strong></p>
-                <p><strong>Questions : 15</strong></p>
-
-                <p>
-                  Vous avez des bases solides ? Ce quiz va plus loin dans les
-                  détails techniques et historiques. Préparez-vous à des
-                  questions plus précises !
-                </p>
-                <p>
-                  Approfondissement des connaissances sur les technologies, les
-                  contextes historiques et les impacts des innovations de nos
-                  personnages.
-                </p>
-                <p><strong>Thèmes abordés :</strong></p>
-                <ul>
-                  <li>Détails techniques des inventions</li>
-                  <li>Contexte historique et social</li>
-                  <li>Collaborations et influences</li>
-                  <li>Évolution des technologies</li>
-                </ul>
-                <button
-                  class="quiz-btn medium"
-                  onclick="window.location.href='quiz.php?niveau=moyen'"
-                >
-                  <span>Commencer le Quiz Moyen</span>
-                </button>
-              </div>
-              <div class="quiz-image">
-                <div class="quiz-icon medium-icon">
-                  <i class="fas fa-crown"></i>
-                </div>
+            <div class="quiz-image">
+              <div
+                class="quiz-icon easy-icon"
+                role="img"
+                aria-label="Icône représentant un quiz de niveau facile"
+              >
+                <i class="fas fa-crown" aria-hidden="true"></i>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <!-- Quiz Difficile -->
-          <section class="section quiz-section" id="quiz-difficile">
-            <div class="quiz-content">
-              <div class="quiz-text">
-                <h2>Quiz Difficile</h2>
-                <p><strong>Niveau : Expert</strong></p>
-                <p><strong>Durée : 12 minutes</strong></p>
-                <p><strong>Questions : 20</strong></p>
-
-                <p>
-                  Réservé aux vrais passionnés ! Ce quiz mettra à l'épreuve vos
-                  connaissances les plus pointues sur l'histoire de
-                  l'informatique.
-                </p>
-                <p>
-                  Questions très spécifiques, anecdotes peu connues et
-                  connexions complexes entre les différents personnages et leurs
-                  œuvres.
-                </p>
-                <p><strong>Thèmes abordés :</strong></p>
-                <ul>
-                  <li>Détails biographiques précis</li>
-                  <li>Aspects techniques avancés</li>
-                  <li>Anecdotes et faits peu connus</li>
-                  <li>Impact à long terme et héritage</li>
-                </ul>
-                <button
-                  class="quiz-btn hard"
-                  onclick="window.location.href='quiz.php?niveau=difficile'"
+        <!-- Quiz Moyen -->
+        <section class="section quiz-section" id="quiz-moyen">
+          <div class="quiz-content">
+            <div class="quiz-text">
+              <h2>Quiz Moyen</h2>
+              <p>
+                <strong>Niveau :</strong>
+                <span aria-label="Niveau intermédiaire">Intermédiaire</span>
+              </p>
+              <p>
+                <strong>Durée :</strong>
+                <span aria-label="Durée estimée 3 minutes maximum"
+                  >3 minutes maximum</span
                 >
-                  <span>Commencer le Quiz Difficile</span>
-                </button>
-              </div>
-              <div class="quiz-image">
-                <div class="quiz-icon hard-icon">
-                  <i class="fas fa-crown"></i>
-                </div>
+              </p>
+              <p>
+                <strong>Questions :</strong>
+                <span aria-label="6 questions au total">6</span>
+              </p>
+              <p>
+                Vous avez des bases solides ? Ce quiz combine informatique,
+                mathématiques et culture générale pour tester vos connaissances
+                intermédiaires.
+              </p>
+              <p>
+                Questions sur les systèmes d'exploitation, les personnalités de
+                l'informatique, les mathématiques de base et les concepts
+                techniques fondamentaux.
+              </p>
+              <button
+                class="quiz-btn medium"
+                onclick="window.location.href='quiz.php?niveau=moyen'"
+                aria-describedby="quiz-moyen-description"
+                type="button"
+              >
+                <span>Commencer le Quiz Moyen</span>
+              </button>
+              <div id="quiz-moyen-description" class="sr-only">
+                Lancer le quiz moyen de 6 questions, durée estimée 3 minutes
               </div>
             </div>
-          </section>
-        </div>
+            <div class="quiz-image">
+              <div
+                class="quiz-icon medium-icon"
+                role="img"
+                aria-label="Icône représentant un quiz de niveau moyen"
+              >
+                <i class="fas fa-crown" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz Difficile -->
+        <section class="section quiz-section" id="quiz-difficile">
+          <div class="quiz-content">
+            <div class="quiz-text">
+              <h2>Quiz Difficile</h2>
+              <p>
+                <strong>Niveau :</strong>
+                <span aria-label="Niveau expert">Expert</span>
+              </p>
+              <p>
+                <strong>Durée :</strong>
+                <span aria-label="Durée estimée 5 minutes maximum"
+                  >5 minutes maximum</span
+                >
+              </p>
+              <p>
+                <strong>Questions :</strong>
+                <span aria-label="6 questions au total">6</span>
+              </p>
+              <p>
+                Réservé aux vrais experts ! Ce quiz approfondit l'informatique
+                et les mathématiques avec des questions techniques avancées sur
+                les pionniers et les algorithmes.
+              </p>
+              <p>
+                Questions spécialisées sur les contributions historiques en
+                informatique, les structures de données, les algorithmes et les
+                mathématiques avancées.
+              </p>
+              <button
+                class="quiz-btn hard"
+                onclick="window.location.href='quiz.php?niveau=difficile'"
+                aria-describedby="quiz-difficile-description"
+                type="button"
+              >
+                <span>Commencer le Quiz Difficile</span>
+              </button>
+              <div id="quiz-difficile-description" class="sr-only">
+                Lancer le quiz difficile de 6 questions, durée estimée 5
+                minutes
+              </div>
+            </div>
+            <div class="quiz-image">
+              <div
+                class="quiz-icon hard-icon"
+                role="img"
+                aria-label="Icône représentant un quiz de niveau difficile"
+              >
+                <i class="fas fa-crown" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
       </div>
     </main>
     <footer>
