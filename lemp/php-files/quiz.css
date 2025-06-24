@@ -202,3 +202,24 @@ header {
     outline: 2px solid var(--_clr-hover);
     outline-offset: 2px;
 }
+
+.feedback {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.1); /* léger fond pour contraste */
+}
+
+.my-form .feedback .correct {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.my-form .feedback .wrong {
+    color: #FF5252;
+    font-weight: bold;
+}
+
+

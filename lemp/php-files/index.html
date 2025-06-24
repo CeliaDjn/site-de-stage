@@ -14,1108 +14,1269 @@
   <body>
     <header>
       <!-- Bouton menu (hamburger) -->
-       <nav>
-          <div class="btn3">
-            <button class="hamburger-btn" aria-label="Ouvrir le menu de navigation">☰</button>
-          </div>
-       </nav>
-      
-    </header>
-    <main>
-    <!-- Container principal pour le contenu flou -->
-    <div class="main-content">
-      <!-- Vidéo de fond -->
-      <video autoplay loop muted class="background-video" aria-hidden="true" role="video-background">
-        <source src="bleu.mp4" type="video/mp4" />
-      </video>
-
-      <!-- Slogan -->
-      <div class="slog">
-        <h1>Informe-toit</h1>
-        <h2>Ton repaire interactif entre informatique et logique</h2>
-        <!-- Boutons d'accueil -->
-        <div class="buttons">
+      <nav>
+        <div class="btn3">
           <button
-            class="btn1"
-            onclick="document.getElementById('presentation').scrollIntoView({ behavior: 'smooth' });"
+            class="hamburger-btn"
+            aria-label="Ouvrir le menu de navigation"
           >
-            Découvrir
-          </button>
-          <button
-            class="btn2"
-            onclick="window.location.href='selection-quiz.html'"
-          >
-            Jouer
+            ☰
           </button>
         </div>
-      </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Container principal pour le contenu flou -->
+      <div class="main-content">
+        <!-- Vidéo de fond -->
+        <video autoplay loop muted class="background-video" aria-hidden="true">
+          <source src="bleu.mp4" type="video/mp4" />
+        </video>
 
-<div class="page-content">
+        <!-- Slogan -->
+        <div class="slog">
+          <h1>Informe-toit</h1>
+          <h2>Ton repaire interactif entre informatique et logique</h2>
+          <!-- Boutons d'accueil -->
+          <div class="buttons">
+            <button
+              class="btn1"
+              onclick="document.getElementById('presentation').scrollIntoView({ behavior: 'smooth' });"
+            >
+              Découvrir
+            </button>
+            <button
+              class="btn2"
+              onclick="window.location.href='selection-quiz.html'"
+            >
+              Jouer
+            </button>
+          </div>
+        </div>
+
+        <div class="page-content">
+          <section
+            class="section"
+            id="presentation"
+            aria-labelledby="presentation-title"
+          >
+            <h2 id="presentation-title">Bienvenue sur Informe-toit</h2>
+
+            <div class="intro-content" role="main">
+              <p>
+                <strong>Informe-toit</strong> est un site interactif et éducatif
+                développé dans le cadre d'un projet de stage universitaire,
+                conçu pour mettre en lumière les grandes figures qui ont marqué
+                l'histoire de l'informatique tout en démontrant la maîtrise de
+                technologies web modernes.
+              </p>
+
+              <h3 id="contenu-site">Contenu du site</h3>
+              <p>
+                De <strong>Ada Lovelace</strong>, première programmeuse de
+                l'histoire, à <strong>Linus Torvalds</strong>, créateur de
+                <span lang="en">Linux</span>, en passant par le visionnaire
+                <strong>Alan Turing</strong> et la pionnière
+                <strong>Grace Hopper</strong>, découvrez les portraits détaillés
+                de ceux et celles qui ont révolutionné notre monde numérique.
+              </p>
+              <p>
+                Le site propose également une
+                <strong>section quiz interactive</strong> avec des jeux de
+                logique et des questions de culture générale mêlant
+                informatique, mathématiques et raisonnement logique. Ces défis
+                sont organisés par niveaux de difficulté pour s'adapter à tous
+                les profils, du débutant à l'expert.
+              </p>
+
+              <h3 id="objectifs-pedagogiques">Objectifs pédagogiques</h3>
+              <p>
+                Notre mission est de rendre l'informatique accessible et
+                passionnante à travers des contenus riches et variés : portraits
+                inspirants, anecdotes historiques, explications techniques
+                vulgarisées, et apprentissage ludique par le jeu.
+              </p>
+
+              <h3 id="contexte-technique">Contexte technique du projet</h3>
+              <p>
+                Ce site constitue un projet de démonstration des compétences
+                acquises en développement web, réalisé en binôme dans un
+                environnement professionnel simulé. Il met en œuvre un ensemble
+                de technologies et méthodologies modernes :
+              </p>
+
+              <h4 id="technologies-utilisees">Technologies web utilisées</h4>
+              <ul>
+                <li>
+                  <strong
+                    ><abbr title="HyperText Markup Language">HTML</abbr
+                    >5</strong
+                  >
+                  : Structure sémantique et accessible du contenu
+                </li>
+                <li>
+                  <strong
+                    ><abbr title="Cascading Style Sheets">CSS</abbr>3</strong
+                  >
+                  : Mise en forme responsive et animations
+                </li>
+                <li>
+                  <strong>JavaScript</strong> : Interactivité, logique des quiz
+                  et expérience utilisateur dynamique
+                </li>
+                <li>
+                  <strong
+                    ><abbr title="PHP: Hypertext Preprocessor"
+                      >PHP</abbr
+                    ></strong
+                  >
+                  : Traitement côté serveur et gestion des données
+                </li>
+                <li>
+                  <strong
+                    ><abbr title="Structured Query Language"
+                      >MySQL</abbr
+                    ></strong
+                  >
+                  : Base de données pour le stockage des questions
+                </li>
+              </ul>
+
+              <h4 id="outils-developpement">
+                Outils de développement et déploiement
+              </h4>
+              <ul>
+                <li>
+                  <strong>Docker</strong> : Containerisation pour un
+                  environnement de développement reproductible
+                </li>
+                <li>
+                  <strong>GitHub</strong> : Gestion de versions collaborative et
+                  intégration continue
+                </li>
+                <li>
+                  <strong><abbr title="Virtual Machine">VM</abbr>ware</strong> :
+                  Virtualisation pour isoler l'environnement de développement
+                </li>
+                <li>
+                  <strong>Travail collaboratif</strong> : Développement en
+                  binôme avec méthodologies agiles
+                </li>
+              </ul>
+
+              <h3 id="conformite-normes">Conformité aux normes</h3>
+
+              <h4 id="accessibilite-numerique">
+                Accessibilité numérique (RGAA)
+              </h4>
+              <p>
+                Le site a été conçu dans le respect des
+                <strong>standards d’accessibilité</strong> (RGAA), avec une
+                navigation clavier, une structure HTML sémantique et des
+                contrastes adaptés, pour garantir une expérience inclusive.
+              </p>
+
+              <h4 id="protection-donnees">
+                Protection des données personnelles
+              </h4>
+              <p>
+                Aucune donnée personnelle n’est collectée ni stockée. Le site
+                respecte les principes du <strong>RGPD</strong> et de la
+                <strong>CNIL</strong> en assurant une
+                <strong>navigation anonyme</strong> sans traçage ni cookies
+                intrusifs.
+              </p>
+
+              <h3 id="apprentissage-competences">Compétences développées</h3>
+              <p>
+                Ce projet illustre la maîtrise de compétences transversales
+                essentielles au développement web professionnel : conception
+                d'interfaces accessibles, programmation full-stack, gestion de
+                bases de données, déploiement containerisé, collaboration via
+                outils de versioning, et respect des contraintes légales et
+                techniques.
+              </p>
+              <p>
+                <strong>Explorez, apprenez et testez vos connaissances</strong>
+                tout en découvrant les héros méconnus qui ont façonné l'ère
+                numérique !
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!--presentation de ada lovelace -->
+
         <section
-          class="section"
-          id="presentation"
-          aria-labelledby="presentation-title"
+          class="section character-section"
+          id="ada-lovelace"
+          aria-labelledby="ada-lovelace-title"
         >
-          <h2 id="presentation-title">Bienvenue sur Informe-toit</h2>
+          <div class="character-content">
+            <div class="character-text">
+              <!-- Section titre avec portrait -->
+              <div class="title-section">
+                <div class="title-content">
+                  <h2 id="ada-lovelace-title">Ada Lovelace</h2>
+                  <div
+                    class="character-info"
+                    role="group"
+                    aria-label="Informations biographiques d'Ada Lovelace"
+                  >
+                    <p>
+                      <strong>Métier(s) :</strong>
+                      <span lang="en"
+                        >Mathématicienne, écrivaine scientifique</span
+                      >
+                    </p>
+                    <p>
+                      <strong>Date de naissance :</strong>
+                      <time datetime="1815-12-10">10 décembre 1815</time>
+                    </p>
+                    <p>
+                      <strong>Date de décès :</strong>
+                      <time datetime="1852-11-27">27 novembre 1852</time>
+                    </p>
+                  </div>
+                </div>
+                <div class="portrait-container">
+                  <img
+                    src="images/ada.jpeg"
+                    alt="Portrait d'Ada Lovelace, comtesse de Lovelace, première programmeuse de l'histoire"
+                    class="portrait-image"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
 
-          <div class="intro-content" role="main">
-            <p>
-              <strong>Informe-toit</strong> est un site interactif et éducatif
-              développé dans le cadre d'un projet de stage universitaire, conçu
-              pour mettre en lumière les grandes figures qui ont marqué
-              l'histoire de l'informatique tout en démontrant la maîtrise de
-              technologies web modernes.
-            </p>
+              <p>
+                Augusta Ada King, comtesse de Lovelace, est souvent reconnue
+                comme la première programmeuse informatique de l'histoire. Fille
+                du poète Lord Byron, elle a été fascinée dès son plus jeune âge
+                par les mathématiques et les sciences. Elle collabora avec le
+                mathématicien Charles Babbage sur sa machine analytique, un
+                ancêtre théorique de l'ordinateur.
+              </p>
 
-            <h3 id="contenu-site">Contenu du site</h3>
-            <p>
-              De <strong>Ada Lovelace</strong>, première programmeuse de
-              l'histoire, à <strong>Linus Torvalds</strong>, créateur de
-              <span lang="en">Linux</span>, en passant par le visionnaire
-              <strong>Alan Turing</strong> et la pionnière
-              <strong>Grace Hopper</strong>, découvrez les portraits détaillés
-              de ceux et celles qui ont révolutionné notre monde numérique.
-            </p>
-            <p>
-              Le site propose également une
-              <strong>section quiz interactive</strong> avec des jeux de logique
-              et des questions de culture générale mêlant informatique,
-              mathématiques et raisonnement logique. Ces défis sont organisés
-              par niveaux de difficulté pour s'adapter à tous les profils, du
-              débutant à l'expert.
-            </p>
+              <h3 id="travaux-revolutionnaires">
+                Ses travaux révolutionnaires
+              </h3>
 
-            <h3 id="objectifs-pedagogiques">Objectifs pédagogiques</h3>
-            <p>
-              Notre mission est de rendre l'informatique accessible et
-              passionnante à travers des contenus riches et variés : portraits
-              inspirants, anecdotes historiques, explications techniques
-              vulgarisées, et apprentissage ludique par le jeu.
-            </p>
+              <!-- Section machine analytique -->
+              <div class="content-with-image">
+                <div class="text-content">
+                  <p>
+                    En 1843, Ada Lovelace traduit et annote un mémoire du
+                    mathématicien italien Luigi Menabrea sur la machine
+                    analytique de Babbage. Ses notes, plus longues que l'article
+                    original, révèlent une compréhension exceptionnelle des
+                    capacités de cette machine.
+                  </p>
+                  <p>
+                    Cette machine révolutionnaire, bien qu'elle n'ait jamais été
+                    entièrement construite, était conçue pour effectuer des
+                    calculs complexes de manière automatique. Ada comprit
+                    immédiatement le potentiel de cette invention qui dépassait
+                    le simple calcul arithmétique.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="images/Babbages.jpg"
+                    alt="La machine analytique de Charles Babbage, ancêtre de l'ordinateur moderne"
+                    class="content-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    La machine analytique de Charles Babbage
+                  </p>
+                </div>
+              </div>
 
-            <h3 id="contexte-technique">Contexte technique du projet</h3>
-            <p>
-              Ce site constitue un projet de démonstration des compétences
-              acquises en développement web, réalisé en binôme dans un
-              environnement professionnel simulé. Il met en œuvre un ensemble de
-              technologies et méthodologies modernes :
-            </p>
+              <!-- Section nombres de Bernoulli -->
+              <div class="content-with-image reverse">
+                <div class="image-container">
+                  <img
+                    src="images/Bernoulli_numbers.jpg"
+                    alt="Algorithme des nombres de Bernoulli développé par Ada Lovelace"
+                    class="content-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    L'algorithme des nombres de Bernoulli d'Ada Lovelace
+                  </p>
+                </div>
+                <div class="text-content">
+                  <p>
+                    Dans la célèbre "Note G", elle développe un algorithme
+                    détaillé pour calculer les nombres de Bernoulli - une
+                    séquence mathématique complexe utilisée en théorie des
+                    nombres. Ce qui distingue Ada, ce sont ses notes détaillées
+                    dans lesquelles elle propose une méthode pour faire calculer
+                    à la machine une suite de nombres.
+                  </p>
+                  <p>
+                    C'est ce qui est considéré comme le tout premier algorithme
+                    destiné à être exécuté par une machine. Elle voyait au-delà
+                    du simple calcul, anticipant les possibilités de traitement
+                    de symboles et de sons — une vision très en avance sur son
+                    temps.
+                  </p>
+                </div>
+              </div>
 
-            <h4 id="technologies-utilisees">Technologies web utilisées</h4>
-            <ul role="list">
-              <li>
-                <strong
-                  ><abbr title="HyperText Markup Language">HTML</abbr>5</strong
-                >
-                : Structure sémantique et accessible du contenu
-              </li>
-              <li>
-                <strong
-                  ><abbr title="Cascading Style Sheets">CSS</abbr>3</strong
-                >
-                : Mise en forme responsive et animations
-              </li>
-              <li>
-                <strong>JavaScript</strong> : Interactivité, logique des quiz et
-                expérience utilisateur dynamique
-              </li>
-              <li>
-                <strong
-                  ><abbr title="PHP: Hypertext Preprocessor">PHP</abbr></strong
-                >
-                : Traitement côté serveur et gestion des données
-              </li>
-              <li>
-                <strong
-                  ><abbr title="Structured Query Language">MySQL</abbr></strong
-                >
-                : Base de données pour le stockage des questions
-              </li>
-            </ul>
+              <h3 id="vision-futuriste">Une vision futuriste</h3>
+              <p>
+                Ada Lovelace ne se contentait pas de comprendre la technologie
+                de son époque : elle en imaginait les développements futurs.
+                Elle théorisait que les machines pourraient un jour composer de
+                la musique, créer de l'art et manipuler des symboles selon des
+                règles logiques. Cette intuition remarquable préfigurait
+                l'intelligence artificielle et l'informatique moderne d'une
+                manière que même Babbage n'avait pas entrevue.
+              </p>
+              <p>
+                Elle fut également la première à comprendre la distinction
+                fondamentale entre données et instructions, concept central de
+                la programmation moderne. Dans ses écrits, elle souligne que la
+                machine analytique pourrait traiter tout ce qui peut être
+                exprimé en symboles logiques, posant ainsi les bases
+                conceptuelles de l'informatique théorique.
+              </p>
 
-            <h4 id="outils-developpement">
-              Outils de développement et déploiement
-            </h4>
-            <ul role="list">
-              <li>
-                <strong>Docker</strong> : Containerisation pour un environnement
-                de développement reproductible
-              </li>
-              <li>
-                <strong>GitHub</strong> : Gestion de versions collaborative et
-                intégration continue
-              </li>
-              <li>
-                <strong><abbr title="Virtual Machine">VM</abbr>ware</strong> :
-                Virtualisation pour isoler l'environnement de développement
-              </li>
-              <li>
-                <strong>Travail collaboratif</strong> : Développement en binôme
-                avec méthodologies agiles
-              </li>
-            </ul>
+              <p><strong>Principales contributions :</strong></p>
+              <ul>
+                <li>
+                  Premier algorithme informatique de l'histoire (calcul des
+                  nombres de Bernoulli)
+                </li>
+                <li>
+                  Traduction et annotation révolutionnaires du mémoire de
+                  Menabrea (1843)
+                </li>
+                <li>
+                  Conceptualisation de la programmation en boucles et
+                  sous-routines
+                </li>
+                <li>
+                  Vision prophétique des applications non-numériques des
+                  ordinateurs
+                </li>
+                <li>Distinction pionnière entre matériel et logiciel</li>
+                <li>
+                  Travail de vulgarisation scientifique sur les machines
+                  computationnelles
+                </li>
+              </ul>
 
-            <h3 id="conformite-normes">Conformité aux normes</h3>
+              <h3 id="heritage-durable">Un héritage durable</h3>
+              <p>
+                Bien que la machine analytique de Babbage n'ait jamais été
+                construite de son vivant, les travaux d'Ada Lovelace ont jeté
+                les bases conceptuelles de l'informatique moderne. Son nom est
+                aujourd'hui honoré dans le langage de programmation
+                <span lang="en">"Ada"</span>, développé par le département de la
+                Défense américain, et ses contributions sont célébrées chaque
+                année lors de l'<span lang="en">Ada Lovelace Day</span>, qui met
+                à l'honneur les femmes en sciences et technologies.
+              </p>
 
-            <h4 id="accessibilite-numerique">Accessibilité numérique (RGAA)</h4>
-            <p>
-              Le site a été conçu dans le respect des
-              <strong>standards d’accessibilité</strong> (RGAA), avec une
-              navigation clavier, une structure HTML sémantique et des
-              contrastes adaptés, pour garantir une expérience inclusive.
-            </p>
+              <blockquote
+                cite=""
+                role="complementary"
+                aria-label="Citation d'Ada Lovelace"
+              >
+                <p>
+                  "L'imagination est la faculté de découvrir des merveilles à
+                  travers les nombres."
+                </p>
+                <footer>— <cite>Ada Lovelace</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
 
-            <h4 id="protection-donnees">Protection des données personnelles</h4>
-            <p>
-              Aucune donnée personnelle n’est collectée ni stockée. Le site
-              respecte les principes du <strong>RGPD</strong> et de la
-              <strong>CNIL</strong> en assurant une
-              <strong>navigation anonyme</strong> sans traçage ni cookies
-              intrusifs.
-            </p>
+        <!--presentation de alan turing -->
 
-            <h3 id="apprentissage-competences">Compétences développées</h3>
-            <p>
-              Ce projet illustre la maîtrise de compétences transversales
-              essentielles au développement web professionnel : conception
-              d'interfaces accessibles, programmation full-stack, gestion de
-              bases de données, déploiement containerisé, collaboration via
-              outils de versioning, et respect des contraintes légales et
-              techniques.
-            </p>
-            <p>
-              <strong>Explorez, apprenez et testez vos connaissances</strong>
-              tout en découvrant les héros méconnus qui ont façonné l'ère
-              numérique !
-            </p>
+        <section
+          class="section character-section"
+          id="alan-turing"
+          aria-labelledby="alan-turing-title"
+        >
+          <div class="character-content">
+            <div class="character-text">
+              <!-- Titre avec infos + portrait -->
+              <div class="title-section">
+                <div class="title-content">
+                  <h2 id="alan-turing-title">Alan Turing</h2>
+                  <div
+                    class="character-info"
+                    role="group"
+                    aria-label="Informations biographiques d'Alan Turing"
+                  >
+                    <p>
+                      <strong>Métier(s) :</strong> Mathématicien, logicien,
+                      cryptanalyste, informaticien
+                    </p>
+                    <p>
+                      <strong>Date de naissance :</strong>
+                      <time datetime="1912-06-23">23 juin 1912</time>
+                    </p>
+                    <p>
+                      <strong>Date de décès :</strong>
+                      <time datetime="1954-06-07">7 juin 1954</time>
+                    </p>
+                  </div>
+                </div>
+                <div class="portrait-container">
+                  <img
+                    src="images/alan.png"
+                    alt="Portrait d'Alan Turing"
+                    class="portrait-image"
+                    loading="lazy"
+                    width="300"
+                    height="400"
+                  />
+                </div>
+              </div>
+
+              <p>
+                Alan Turing est l'un des plus grands mathématiciens et logiciens
+                du <abbr title="vingtième siècle">XX<sup>e</sup> siècle</abbr>,
+                largement considéré comme le père de l'informatique moderne. Il
+                a posé les bases théoriques de l'ordinateur avec sa célèbre
+                "machine de Turing", un modèle abstrait capable de simuler
+                n'importe quel algorithme.
+              </p>
+
+              <h3 id="machine-turing">
+                La machine de Turing : fondement de l'informatique
+              </h3>
+
+              <!-- Bloc avec image machine de Turing -->
+              <div class="content-with-image">
+                <div class="text-content">
+                  <p>
+                    En 1936, alors qu'il n'a que 24 ans, Turing publie un
+                    article révolutionnaire intitulé
+                    <cite lang="en">"On Computable Numbers"</cite>. Il y décrit
+                    un dispositif théorique, aujourd'hui appelé "machine de
+                    Turing", composé d'un ruban infini divisé en cases et d'une
+                    tête de lecture capable de lire, écrire et se déplacer selon
+                    des règles précises. Cette abstraction mathématique définit
+                    ce qu'est un calcul et établit les limites théoriques de ce
+                    qui peut être calculé.
+                  </p>
+                  <p>
+                    Ce concept fondamental démontre qu'une machine universelle
+                    peut simuler n'importe quelle autre machine de Turing,
+                    posant ainsi les bases de l'ordinateur programmable moderne.
+                    Tous nos ordinateurs actuels sont, en essence, des
+                    implémentations physiques de ce modèle théorique.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="images/Turing_Machine.png"
+                    alt="Schéma de la machine de Turing, montrant un ruban infini et une tête de lecture"
+                    class="content-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    Schéma simplifié de la machine de Turing
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="bletchley-park">Bletchley Park et la cryptanalyse</h3>
+
+              <!-- Bloc avec image Bombe de Turing -->
+              <div class="content-with-image reverse">
+                <div class="image-container">
+                  <img
+                    src="images/Bletchley_Park_Bombe.jpg"
+                    alt="La machine Bombe développée pour décrypter Enigma pendant la Seconde Guerre mondiale"
+                    class="content-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    La machine Bombe utilisée à Bletchley Park
+                  </p>
+                </div>
+                <div class="text-content">
+                  <p>
+                    Pendant la Seconde Guerre mondiale, Turing rejoint l'équipe
+                    secrète de <span lang="en">Bletchley Park</span>, le centre
+                    de décryptage britannique. Il dirige les efforts pour percer
+                    les secrets d'<span lang="en">Enigma</span>, la machine de
+                    chiffrement allemande considérée comme inviolable. Son génie
+                    réside dans l'amélioration de la "Bombe", une machine
+                    électromécanique capable de tester des milliers de
+                    combinaisons par jour.
+                  </p>
+                  <p>
+                    Grâce à ses innovations, notamment l'exploitation des
+                    faiblesses humaines dans l'utilisation d'Enigma et le
+                    développement de méthodes statistiques avancées, les Alliés
+                    parviennent à lire une grande partie des communications
+                    nazies. Les historiens estiment que ce travail a raccourci
+                    la guerre de deux à quatre ans, sauvant potentiellement des
+                    millions de vies.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="intelligence-artificielle">
+                Pionnier de l'intelligence artificielle
+              </h3>
+              <p>
+                Dès 1947, Turing s'intéresse à ce qu'il appelle les "machines
+                intelligentes". Dans son célèbre article de 1950
+                <cite lang="en">"Computing Machinery and Intelligence"</cite>,
+                il propose ce qui deviendra le "test de Turing" : si un
+                interrogateur humain ne peut distinguer les réponses d'une
+                machine de celles d'un humain lors d'une conversation, alors
+                cette machine peut être considérée comme intelligente.
+              </p>
+              <p>
+                Il anticipe les objections philosophiques à l'intelligence
+                artificielle et développe des arguments sur la possibilité pour
+                les machines de penser, de créer et d'apprendre. Ses réflexions
+                sur les réseaux neuronaux artificiels et l'apprentissage
+                automatique précèdent de plusieurs décennies les développements
+                actuels de l'<abbr title="Intelligence Artificielle" lang="en"
+                  >IA</abbr
+                >.
+              </p>
+
+              <h3 id="travaux-mathematiques">
+                Contributions mathématiques multiples
+              </h3>
+              <p>
+                Au-delà de l'informatique, Turing apporte des contributions
+                majeures à d'autres domaines. Ses travaux sur la morphogenèse
+                (formation des structures biologiques) établissent les bases
+                mathématiques de la biologie du développement. Il développe des
+                équations différentielles expliquant comment les motifs naturels
+                - rayures du zèbre, taches du léopard - peuvent émerger
+                spontanément.
+              </p>
+              <p>
+                En logique mathématique, il résout des problèmes fondamentaux
+                liés au "problème de l'arrêt" (décidabilité), démontrant qu'il
+                existe des questions mathématiques pour lesquelles aucun
+                algorithme ne peut fournir de réponse universelle.
+              </p>
+
+              <p>
+                Malgré ses accomplissements extraordinaires, il fut persécuté
+                pour son homosexualité, alors illégale au Royaume-Uni. Condamné
+                en 1952, il subit un traitement hormonal forcé plutôt que la
+                prison. Il mourut dans des circonstances tragiques le
+                <time datetime="1954-06-07">7 juin 1954</time>, officiellement
+                par empoisonnement au cyanure, mais son héritage scientifique
+                est immense.
+              </p>
+
+              <p><strong>Principales contributions :</strong></p>
+              <ul>
+                <li>
+                  Conception de la machine de Turing, modèle théorique de
+                  l'ordinateur
+                </li>
+                <li>
+                  Décryptage des codes <span lang="de">Enigma</span> et
+                  contribution décisive à la victoire alliée
+                </li>
+                <li>
+                  Création du test de Turing et fondation de l'intelligence
+                  artificielle
+                </li>
+                <li>
+                  Travaux pionniers sur la morphogenèse et les systèmes
+                  biologiques
+                </li>
+                <li>
+                  Résolution de problèmes fondamentaux en logique mathématique
+                </li>
+                <li>
+                  Développement des premiers programmes informatiques au
+                  <abbr title="National Physical Laboratory" lang="en"
+                    >NPL</abbr
+                  >
+                </li>
+              </ul>
+
+              <h3 id="reconnaissance-posthume">Reconnaissance posthume</h3>
+              <p>
+                Le génie de Turing n'a été pleinement reconnu qu'après sa mort.
+                En 2009, le Premier ministre britannique Gordon Brown présente
+                des excuses officielles pour le traitement injuste qu'il a subi.
+                En 2013, la reine Élisabeth <abbr title="deux">II</abbr> lui
+                accorde un pardon royal posthume. Le prix Turing, équivalent du
+                prix Nobel en informatique, porte son nom depuis 1966.
+              </p>
+
+              <blockquote
+                cite=""
+                role="complementary"
+                aria-label="Citation d'Alan Turing"
+              >
+                <p>
+                  "Nous ne pouvons jamais prévoir ce que fera une machine. C'est
+                  ce qui les rend si fascinantes."
+                </p>
+                <footer>— <cite>Alan Turing</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <!--presentation de linus torvald -->
+
+        <section
+          class="section character-section"
+          id="linus-torvalds"
+          aria-labelledby="linus-torvalds-title"
+        >
+          <div class="character-content">
+            <div class="character-text">
+              <!-- Titre avec infos + portrait -->
+              <div class="title-section">
+                <div class="title-content">
+                  <h2 id="linus-torvalds-title">Linus Torvalds</h2>
+                  <div
+                    class="character-info"
+                    role="group"
+                    aria-label="Informations biographiques de Linus Torvalds"
+                  >
+                    <p>
+                      <strong>Métier(s) :</strong> Ingénieur logiciel,
+                      développeur, architecte système
+                    </p>
+                    <p>
+                      <strong>Date de naissance :</strong>
+                      <time datetime="1969-12-28">28 décembre 1969</time>
+                    </p>
+                    <p>
+                      <strong>Nationalité :</strong> Finlandaise (naturalisé
+                      américain en 2010)
+                    </p>
+                  </div>
+                </div>
+                <div class="portrait-container">
+                  <img
+                    src="images/linus.png"
+                    alt="Portrait de Linus Torvalds"
+                    class="portrait-image"
+                    loading="lazy"
+                    width="300"
+                    height="400"
+                  />
+                </div>
+              </div>
+
+              <p>
+                Linus Torvalds est un informaticien connu pour avoir créé le
+                noyau <span lang="en">Linux</span> en 1991. Ce noyau est devenu
+                le cœur de nombreux systèmes d’exploitation libres utilisés dans
+                le monde entier, des serveurs aux téléphones mobiles. Il est
+                également à l’origine de <span lang="en">Git</span>, un outil
+                révolutionnaire de gestion de versions.
+              </p>
+
+              <h3 id="naissance-linux">
+                La naissance de Linux : une révolution accidentelle
+              </h3>
+
+              <!-- Bloc avec image Tux -->
+              <div class="content-with-image">
+                <div class="text-content">
+                  <p>
+                    En 1991, alors qu’il est encore étudiant à l’Université
+                    d’Helsinki, Torvalds commence à développer un système
+                    d’exploitation pour son usage personnel. Le
+                    <time datetime="1991-08-25">25 août 1991</time>, il publie
+                    un message sur le forum
+                    <span lang="en">Usenet</span> annonçant son projet :
+                    <q lang="en"
+                      >I'm doing a (free) operating system (just a hobby, won't
+                      be big and professional like GNU)...</q
+                    >
+                  </p>
+                  <p>
+                    Il publie le code de <span lang="en">Linux 0.01</span> sous
+                    licence libre
+                    <abbr title="General Public License" lang="en">GPL</abbr>,
+                    permettant à une communauté grandissante de contribuer à son
+                    développement. Ce modèle collaboratif devient un pilier du
+                    mouvement <span lang="en">open source</span>.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="images/Tux.svg.png"
+                    alt="Mascotte Tux de Linux"
+                    class="small-image"
+                    height="150"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">Tux, la mascotte du noyau Linux</p>
+                </div>
+              </div>
+
+              <h3 id="developpement-collaboratif">
+                Un modèle de développement révolutionnaire
+              </h3>
+              <p>
+                Torvalds met en place une méthode de développement collaborative
+                ouverte, où des milliers de développeurs peuvent proposer des
+                modifications. Il adopte une stratégie dite
+                <q lang="en">release early, release often</q>, favorisant une
+                amélioration continue du code.
+              </p>
+              <p>
+                Il agit comme "dictateur bienveillant", validant les
+                contributions intégrées au noyau principal. Ce mode de
+                gouvernance assure la cohérence et la robustesse du projet Linux
+                depuis plus de trois décennies.
+              </p>
+
+              <h3 id="impact-technologique">Impact technologique mondial</h3>
+              <p>
+                Aujourd’hui, le noyau Linux est présent dans plus de 70&nbsp;%
+                des serveurs web, tous les supercalculateurs du Top500, et dans
+                plus de 2,5&nbsp;milliards d’appareils Android. Il est utilisé
+                dans les infrastructures critiques, les objets connectés, et les
+                voitures autonomes.
+              </p>
+              <p>
+                Grâce à sa modularité et sa fiabilité, Linux est au cœur
+                d’écosystèmes comme <span lang="en">Debian</span>,
+                <span lang="en">Ubuntu</span>, <span lang="en">Red Hat</span> ou
+                encore <span lang="en">Android</span>.
+              </p>
+
+              <h3 id="creation-git">
+                Git : révolutionner la gestion de versions
+              </h3>
+
+              <!-- Bloc avec image Git -->
+              <div class="content-with-image reverse">
+                <div class="image-container">
+                  <img
+                    src="images/Git-Icon-1788C.svg"
+                    alt="Logo de Git"
+                    class="small-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    Logo de Git, système de gestion de versions
+                  </p>
+                </div>
+                <div class="text-content">
+                  <p>
+                    En 2005, pour gérer efficacement le développement du noyau
+                    Linux, Torvalds crée <span lang="en">Git</span>, un système
+                    de contrôle de versions distribué. Il permet à chaque
+                    développeur de travailler indépendamment tout en assurant la
+                    traçabilité et la fusion des contributions.
+                  </p>
+                  <p>
+                    Git devient l’outil incontournable du développement logiciel
+                    moderne, utilisé par des millions de projets à travers des
+                    plateformes comme <span lang="en">GitHub</span>,
+                    <span lang="en">GitLab</span> ou
+                    <span lang="en">Bitbucket</span>.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="philosophie-logiciel-libre">
+                Philosophie pragmatique du logiciel libre
+              </h3>
+              <p>
+                Contrairement à Richard Stallman, Torvalds adopte une approche
+                plus pragmatique de l’<span lang="en">open source</span>. Pour
+                lui, la qualité logicielle découle de la transparence et de la
+                collaboration plus que d’une posture idéologique.
+              </p>
+              <p>
+                Cette vision a permis à de grandes entreprises comme Google,
+                Facebook ou Tesla de s’impliquer dans des projets libres,
+                démontrant la viabilité économique de ce modèle.
+              </p>
+
+              <p><strong>Principales contributions :</strong></p>
+              <ul>
+                <li>
+                  Création du noyau <span lang="en">Linux</span> et du modèle de
+                  développement communautaire
+                </li>
+                <li>
+                  Conception de <span lang="en">Git</span>, système de gestion
+                  de versions distribué
+                </li>
+                <li>
+                  Promotion du <span lang="en">logiciel libre</span> comme
+                  modèle de développement efficace
+                </li>
+                <li>
+                  Influence durable sur l’infrastructure mondiale d’internet et
+                  des systèmes embarqués
+                </li>
+              </ul>
+
+              <h3 id="reconnaissance-prix">Reconnaissance et héritage</h3>
+              <p>
+                Linus Torvalds a reçu de nombreuses distinctions, dont le prix
+                <span lang="en">Millennium Technology Prize</span> en 2012. Il
+                est considéré comme l’un des informaticiens les plus influents
+                de notre époque, ayant changé durablement la façon dont les
+                logiciels sont conçus et partagés.
+              </p>
+
+              <blockquote
+                role="complementary"
+                aria-label="Citation de Linus Torvalds"
+              >
+                <p>"Talk is cheap. Show me the code."</p>
+                <footer>— <cite>Linus Torvalds</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <!--presentation de grace hopper -->
+
+        <!--presentation de grace hopper - STRUCTURE AVEC IMAGES INTÉGRÉES -->
+
+        <section
+          class="section character-section"
+          id="grace-hopper"
+          aria-labelledby="grace-hopper-title"
+        >
+          <div class="character-content">
+            <div class="character-text">
+              <!-- Titre avec infos + portrait -->
+              <div class="title-section">
+                <div class="title-content">
+                  <h2 id="grace-hopper-title">Grace Hopper</h2>
+                  <div
+                    class="character-info"
+                    role="group"
+                    aria-label="Informations biographiques de Grace Hopper"
+                  >
+                    <p>
+                      <strong>Métier(s) :</strong> Informaticienne, amirale de
+                      la marine, enseignante
+                    </p>
+                    <p>
+                      <strong>Date de naissance :</strong>
+                      <time datetime="1906-12-09">9 décembre 1906</time>
+                    </p>
+                    <p>
+                      <strong>Date de décès :</strong>
+                      <time datetime="1992-01-01"
+                        >1<sup>er</sup> janvier 1992</time
+                      >
+                    </p>
+                    <p>
+                      <strong>Grade militaire :</strong> Amirale (<span
+                        lang="en"
+                        >Rear Admiral</span
+                      >)
+                    </p>
+                    <p>
+                      <strong>Surnoms :</strong> <q lang="en">Amazing Grace</q>,
+                      <q lang="en">Grandma COBOL</q>
+                    </p>
+                  </div>
+                </div>
+                <div class="portrait-container">
+                  <img
+                    src="images/grace.png"
+                    alt="Portrait de Grace Hopper en uniforme de la marine américaine"
+                    class="portrait-image"
+                    loading="lazy"
+                    width="300"
+                    height="400"
+                  />
+                </div>
+              </div>
+
+              <p>
+                Grace Murray Hopper était une informaticienne et amirale de la
+                marine américaine, pionnière de la programmation informatique.
+                Elle fut l'une des premières programmeuses du
+                <span lang="en">Harvard Mark I</span>, un des tout premiers
+                ordinateurs électromécaniques, et est surtout connue pour avoir
+                développé le premier compilateur, rendant possible les langages
+                de programmation proches du langage humain.
+              </p>
+
+              <h3 id="harvard-mark-i">Les débuts avec Harvard Mark I</h3>
+              <p>
+                En 1944, Grace Hopper rejoint l'équipe du professeur Howard
+                Aiken à l'Université Harvard pour travailler sur le
+                <span lang="en">Mark I</span>, un calculateur électromécanique
+                de 17 mètres de long pesant 5 tonnes. Elle devient rapidement
+                l'une des principales programmeuses de cette machine
+                révolutionnaire, développant des sous-routines et des programmes
+                pour des calculs balistiques destinés à la marine.
+              </p>
+              <p>
+                Son travail sur le <span lang="en">Mark I</span> lui permet de
+                maîtriser les subtilités de la programmation en langage machine
+                et de comprendre les défis fondamentaux de l'informatique
+                naissante. Elle rédige le premier manuel d'utilisation de
+                l'ordinateur, établissant les bases de la documentation
+                technique moderne.
+              </p>
+
+              <h3 id="invention-compilateur">
+                L'invention révolutionnaire du compilateur
+              </h3>
+              <!-- Bloc avec image du concept de compilateur -->
+              <div class="content-with-image">
+                <div class="text-content">
+                  <p>
+                    En 1947, travaillant pour la société
+                    <span lang="en">Eckert-Mauchly Computer Corporation</span>,
+                    Hopper développe le concept révolutionnaire du compilateur.
+                    Frustrée par la complexité de la programmation en code
+                    machine, elle imagine un programme capable de traduire
+                    automatiquement des instructions écrites dans un langage
+                    proche de l'anglais en code machine.
+                  </p>
+                  <p>
+                    Son premier compilateur, l'<span lang="en">A-0 System</span>
+                    (1951), permet aux programmeurs d'écrire des programmes en
+                    utilisant des mots anglais plutôt que des séquences de
+                    chiffres binaires. Cette innovation révolutionnaire ouvre la
+                    voie à tous les langages de programmation modernes. Elle
+                    développe ensuite l'<span lang="en">A-1</span> et l'<span
+                      lang="en"
+                      >A-2</span
+                    >, améliorant constamment les capacités de compilation.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="images/compiler.jpg"
+                    alt="Diagramme illustrant le concept d'un compilateur, qui traduit un code source lisible par l'humain en code machine exécutable par l'ordinateur."
+                    class="content-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    Concept du compilateur A-0, traduisant le code en
+                    instructions machine.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="cobol-langage">COBOL : démocratiser la programmation</h3>
+              <!-- Bloc avec image du code COBOL -->
+              <div class="content-with-image reverse">
+                <div class="image-container">
+                  <img
+                    src="images/cobol.jpg"
+                    alt="Exemple de code COBOL montrant sa syntaxe proche de l'anglais, utilisée pour les applications de gestion."
+                    class="content-image"
+                    loading="lazy"
+                  />
+                  <p class="image-caption">
+                    Extrait de code COBOL, conçu pour être lisible et destiné
+                    aux applications commerciales.
+                  </p>
+                </div>
+                <div class="text-content">
+                  <p>
+                    En 1959, Hopper dirige le comité qui développe
+                    <abbr title="Common Business-Oriented Language" lang="en"
+                      >COBOL</abbr
+                    >, un langage de programmation destiné aux applications
+                    commerciales. Sa vision : créer un langage si proche de
+                    l'anglais que les gestionnaires d'entreprise pourraient
+                    comprendre et même écrire des programmes.
+                  </p>
+                  <p>
+                    <span lang="en">COBOL</span> révolutionne l'informatique de
+                    gestion avec sa syntaxe explicite :
+                    <code lang="en">ADD SALARY TO TOTAL-PAYROLL</code> plutôt
+                    que des codes cryptiques. Le langage devient rapidement le
+                    standard pour les applications bancaires, financières et
+                    administratives. Encore aujourd'hui, plus de 60 ans après sa
+                    création, <span lang="en">COBOL</span> fait fonctionner 95%
+                    des distributeurs automatiques et traite des trillions de
+                    dollars de transactions quotidiennes.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="bug-informatique">La légende du premier "bug"</h3>
+              <p>
+                Le <time datetime="1947-09-09">9 septembre 1947</time>,
+                travaillant sur le <span lang="en">Harvard Mark II</span>, Grace
+                Hopper découvre qu'un papillon de nuit coincé dans un relais
+                électromécanique cause un dysfonctionnement. Elle colle
+                soigneusement l'insecte dans le carnet de bord avec la note :
+                <q lang="en">First actual case of bug being found</q>.
+              </p>
+              <p>
+                Bien qu'elle n'ait pas inventé le terme "bug" (utilisé depuis le
+                <abbr title="dix-neuvième siècle">XIX<sup>e</sup> siècle</abbr>
+                pour désigner des défauts techniques), cet incident popularise
+                l'expression dans le domaine informatique. Le carnet de bord
+                original est conservé au
+                <span lang="en"
+                  >Smithsonian National Museum of American History</span
+                >.
+              </p>
+
+              <h3 id="innovations-techniques">
+                Innovations techniques et conceptuelles
+              </h3>
+              <p>
+                Au-delà du compilateur et de <span lang="en">COBOL</span>,
+                Hopper développe de nombreuses innovations techniques. Elle
+                conçoit des méthodes de validation automatique des programmes,
+                des systèmes de gestion d'erreurs et des techniques
+                d'optimisation de code. Ses travaux sur la standardisation des
+                langages de programmation établissent les bases de la
+                portabilité logicielle.
+              </p>
+              <p>
+                Elle invente également le concept de "sous-routine"
+                réutilisable, permettant aux programmeurs de créer des
+                bibliothèques de fonctions. Cette approche modulaire
+                révolutionne l'efficacité du développement logiciel et influence
+                l'architecture des programmes modernes.
+              </p>
+
+              <h3 id="carriere-militaire">Carrière militaire exceptionnelle</h3>
+              <p>
+                Parallèlement à ses contributions techniques, Hopper mène une
+                carrière militaire remarquable. Recrutée dans la
+                <span lang="en">WAVES</span> (femmes réservistes de la marine)
+                en 1943, elle gravit les échelons jusqu'au grade d'amirale. À 79
+                ans, elle devient la doyenne de la marine américaine en service
+                actif.
+              </p>
+              <p>
+                Son rôle dans la marine ne se limite pas à la technique : elle
+                forme des milliers d'officiers à l'informatique, établit des
+                standards de sécurité pour les systèmes militaires et conseille
+                le Pentagone sur l'évolution technologique. Sa vision
+                stratégique influence la modernisation informatique de l'armée
+                américaine.
+              </p>
+
+              <h3 id="pedagogie-vulgarisation">Pédagogie et vulgarisation</h3>
+              <p>
+                Hopper excelle dans la transmission du savoir. Ses conférences,
+                mêlant rigueur technique et humour, démystifient l'informatique
+                auprès du grand public. Elle utilise des analogies marquantes :
+                pour expliquer la nanoseconde, elle montre un fil de 30
+                centimètres représentant la distance parcourue par la lumière en
+                une nanoseconde.
+              </p>
+              <p>
+                Elle encourage particulièrement les femmes à s'orienter vers
+                l'informatique, défendant une approche inclusive bien avant que
+                cette question ne devienne centrale. Ses mentorats inspirent une
+                génération de femmes ingénieures et informaticiennes.
+              </p>
+
+              <p><strong>Principales contributions :</strong></p>
+              <ul>
+                <li>
+                  Développement du premier compilateur informatique (<span
+                    lang="en"
+                    >A-0 System</span
+                  >, 1951)
+                </li>
+                <li>
+                  Co-création et promotion du langage
+                  <span lang="en">COBOL</span> (1959)
+                </li>
+                <li>
+                  Programmation pionnière sur
+                  <span lang="en">Harvard Mark I</span> et
+                  <span lang="en">Mark II</span>
+                </li>
+                <li>
+                  Invention des sous-routines réutilisables et de la
+                  programmation modulaire
+                </li>
+                <li>
+                  Standardisation des langages de programmation et portabilité
+                  logicielle
+                </li>
+                <li>
+                  Formation de milliers d'informaticiens dans la marine
+                  américaine
+                </li>
+                <li>Vulgarisation et démocratisation de l'informatique</li>
+                <li>
+                  Pionnier de la documentation technique et des manuels
+                  d'utilisation
+                </li>
+              </ul>
+
+              <h3 id="reconnaissance-heritage">Reconnaissance et héritage</h3>
+              <p>
+                Grace Hopper reçoit de nombreuses distinctions : la
+                <span lang="en">National Medal of Technology</span> (1991), plus
+                de 40 doctorats honorifiques, et devient la première femme
+                nommée <span lang="en">Distinguished Fellow</span> de la
+                <span lang="en">British Computer Society</span>. Un destroyer de
+                la marine américaine, l'<span lang="en">USS Hopper</span>, porte
+                son nom.
+              </p>
+              <p>
+                La conférence <span lang="en">Grace Hopper Celebration</span>,
+                plus grand rassemblement mondial de femmes techniciennes,
+                perpétue son héritage. Son influence dépasse la technique : elle
+                a prouvé que l'innovation naît souvent de la remise en question
+                des pratiques établies.
+              </p>
+
+              <blockquote
+                cite=""
+                role="complementary"
+                aria-label="Citation de Grace Hopper"
+              >
+                <p lang="en">
+                  "The most dangerous phrase in the language is: 'We've always
+                  done it this way.'"
+                </p>
+                <p>
+                  <em
+                    >(La phrase la plus dangereuse qui soit est : "Nous avons
+                    toujours fait comme ça.")</em
+                  >
+                </p>
+                <footer>— <cite>Grace Hopper</cite></footer>
+              </blockquote>
+            </div>
           </div>
         </section>
       </div>
 
-      <!--presentation de ada lovelace -->
+      <!-- Overlay de flou -->
+      <div class="main-content-overlay"></div>
 
-      <section
-        class="section character-section"
-        id="ada-lovelace"
-        aria-labelledby="ada-lovelace-title"
-      >
-        <div class="character-content">
-          <div class="character-text">
-            <h2 id="ada-lovelace-title">Ada Lovelace</h2>
-            <div
-              class="character-info"
-              role="group"
-              aria-label="Informations biographiques d'Ada Lovelace"
-            >
-              <p>
-                <strong>Métier(s) :</strong>
-                <span lang="en">Mathématicienne, écrivaine scientifique</span>
-              </p>
-              <p>
-                <strong>Date de naissance :</strong>
-                <time datetime="1815-12-10">10 décembre 1815</time>
-              </p>
-              <p>
-                <strong>Date de décès :</strong>
-                <time datetime="1852-11-27">27 novembre 1852</time>
-              </p>
-            </div>
-            <p>
-              Augusta Ada King, comtesse de Lovelace, est souvent reconnue comme
-              la première programmeuse informatique de l'histoire. Fille du
-              poète Lord Byron, elle a été fascinée dès son plus jeune âge par
-              les mathématiques et les sciences. Elle collabora avec le
-              mathématicien Charles Babbage sur sa machine analytique, un
-              ancêtre théorique de l'ordinateur.
-            </p>
-
-            <h3 id="travaux-revolutionnaires">Ses travaux révolutionnaires</h3>
-            <p>
-              En 1843, Ada Lovelace traduit et annote un mémoire du
-              mathématicien italien Luigi Menabrea sur la machine analytique de
-              Babbage. Ses notes, plus longues que l'article original, révèlent
-              une compréhension exceptionnelle des capacités de cette machine.
-              Dans la célèbre "Note G", elle développe un algorithme détaillé
-              pour calculer les nombres de Bernoulli - une séquence mathématique
-              complexe utilisée en théorie des nombres.
-            </p>
-            <p>
-              Ce qui distingue Ada, ce sont ses notes détaillées dans lesquelles
-              elle propose une méthode pour faire calculer à la machine une
-              suite de nombres : c'est ce qui est considéré comme le tout
-              premier algorithme destiné à être exécuté par une machine. Elle
-              voyait au-delà du simple calcul, anticipant les possibilités de
-              traitement de symboles et de sons — une vision très en avance sur
-              son temps.
-            </p>
-
-            <h3 id="vision-futuriste">Une vision futuriste</h3>
-            <p>
-              Ada Lovelace ne se contentait pas de comprendre la technologie de
-              son époque : elle en imaginait les développements futurs. Elle
-              théorisait que les machines pourraient un jour composer de la
-              musique, créer de l'art et manipuler des symboles selon des règles
-              logiques. Cette intuition remarquable préfigurait l'intelligence
-              artificielle et l'informatique moderne d'une manière que même
-              Babbage n'avait pas entrevue.
-            </p>
-            <p>
-              Elle fut également la première à comprendre la distinction
-              fondamentale entre données et instructions, concept central de la
-              programmation moderne. Dans ses écrits, elle souligne que la
-              machine analytique pourrait traiter tout ce qui peut être exprimé
-              en symboles logiques, posant ainsi les bases conceptuelles de
-              l'informatique théorique.
-            </p>
-
-            <p><strong>Principales contributions :</strong></p>
-            <ul>
-              <li>
-                Premier algorithme informatique de l'histoire (calcul des
-                nombres de Bernoulli)
-              </li>
-              <li>
-                Traduction et annotation révolutionnaires du mémoire de Menabrea
-                (1843)
-              </li>
-              <li>
-                Conceptualisation de la programmation en boucles et
-                sous-routines
-              </li>
-              <li>
-                Vision prophétique des applications non-numériques des
-                ordinateurs
-              </li>
-              <li>Distinction pionnière entre matériel et logiciel</li>
-              <li>
-                Travail de vulgarisation scientifique sur les machines
-                computationnelles
-              </li>
-            </ul>
-
-            <h3 id="heritage-durable">Un héritage durable</h3>
-            <p>
-              Bien que la machine analytique de Babbage n'ait jamais été
-              construite de son vivant, les travaux d'Ada Lovelace ont jeté les
-              bases conceptuelles de l'informatique moderne. Son nom est
-              aujourd'hui honoré dans le langage de programmation
-              <span lang="en">"Ada"</span>, développé par le département de la
-              Défense américain, et ses contributions sont célébrées chaque
-              année lors de l'<span lang="en">Ada Lovelace Day</span>, qui met à
-              l'honneur les femmes en sciences et technologies.
-            </p>
-
-            <blockquote
-              cite=""
-              role="complementary"
-              aria-label="Citation d'Ada Lovelace"
-            >
-              <p>
-                "L'imagination est la faculté de découvrir des merveilles à
-                travers les nombres."
-              </p>
-              <footer>— <cite>Ada Lovelace</cite></footer>
-            </blockquote>
-          </div>
-          <div class="character-image">
-            <img
-              src="images/ada.jpeg"
-              alt="Portrait en noir et blanc d'Ada Lovelace, femme élégante du 19ème siècle portant une robe à manches bouffantes et les cheveux relevés en chignon"
-              loading="lazy"
-              width="300"
-              height="400"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!--presentation de alan turing -->
-
-      <section
-        class="section character-section"
-        id="alan-turing"
-        aria-labelledby="alan-turing-title"
-      >
-        <div class="character-content">
-          <div class="character-text">
-            <h2 id="alan-turing-title">Alan Turing</h2>
-            <div
-              class="character-info"
-              role="group"
-              aria-label="Informations biographiques d'Alan Turing"
-            >
-              <p>
-                <strong>Métier(s) :</strong> Mathématicien, logicien,
-                cryptanalyste, informaticien
-              </p>
-              <p>
-                <strong>Date de naissance :</strong>
-                <time datetime="1912-06-23">23 juin 1912</time>
-              </p>
-              <p>
-                <strong>Date de décès :</strong>
-                <time datetime="1954-06-07">7 juin 1954</time>
-              </p>
-            </div>
-            <p>
-              Alan Turing est l'un des plus grands mathématiciens et logiciens
-              du <abbr title="vingtième siècle">XX<sup>e</sup> siècle</abbr>,
-              largement considéré comme le père de l'informatique moderne. Il a
-              posé les bases théoriques de l'ordinateur avec sa célèbre "machine
-              de Turing", un modèle abstrait capable de simuler n'importe quel
-              algorithme.
-            </p>
-
-            <h3 id="machine-turing">
-              La machine de Turing : fondement de l'informatique
-            </h3>
-            <p>
-              En 1936, alors qu'il n'a que 24 ans, Turing publie un article
-              révolutionnaire intitulé
-              <cite lang="en">"On Computable Numbers"</cite>. Il y décrit un
-              dispositif théorique, aujourd'hui appelé "machine de Turing",
-              composé d'un ruban infini divisé en cases et d'une tête de lecture
-              capable de lire, écrire et se déplacer selon des règles précises.
-              Cette abstraction mathématique définit ce qu'est un calcul et
-              établit les limites théoriques de ce qui peut être calculé.
-            </p>
-            <p>
-              Ce concept fondamental démontre qu'une machine universelle peut
-              simuler n'importe quelle autre machine de Turing, posant ainsi les
-              bases de l'ordinateur programmable moderne. Tous nos ordinateurs
-              actuels sont, en essence, des implémentations physiques de ce
-              modèle théorique.
-            </p>
-
-            <h3 id="bletchley-park">Bletchley Park et la cryptanalyse</h3>
-            <p>
-              Pendant la Seconde Guerre mondiale, Turing rejoint l'équipe
-              secrète de <span lang="en">Bletchley Park</span>, le centre de
-              décryptage britannique. Il dirige les efforts pour percer les
-              secrets d'<span lang="en">Enigma</span>, la machine de chiffrement
-              allemande considérée comme inviolable. Son génie réside dans
-              l'amélioration de la "Bombe", une machine électromécanique capable
-              de tester des milliers de combinaisons par jour.
-            </p>
-            <p>
-              Grâce à ses innovations, notamment l'exploitation des faiblesses
-              humaines dans l'utilisation d'Enigma et le développement de
-              méthodes statistiques avancées, les Alliés parviennent à lire une
-              grande partie des communications nazies. Les historiens estiment
-              que ce travail a raccourci la guerre de deux à quatre ans, sauvant
-              potentiellement des millions de vies.
-            </p>
-
-            <h3 id="intelligence-artificielle">
-              Pionnier de l'intelligence artificielle
-            </h3>
-            <p>
-              Dès 1947, Turing s'intéresse à ce qu'il appelle les "machines
-              intelligentes". Dans son célèbre article de 1950
-              <cite lang="en">"Computing Machinery and Intelligence"</cite>, il
-              propose ce qui deviendra le "test de Turing" : si un interrogateur
-              humain ne peut distinguer les réponses d'une machine de celles
-              d'un humain lors d'une conversation, alors cette machine peut être
-              considérée comme intelligente.
-            </p>
-            <p>
-              Il anticipe les objections philosophiques à l'intelligence
-              artificielle et développe des arguments sur la possibilité pour
-              les machines de penser, de créer et d'apprendre. Ses réflexions
-              sur les réseaux neuronaux artificiels et l'apprentissage
-              automatique précèdent de plusieurs décennies les développements
-              actuels de l'<abbr title="Intelligence Artificielle" lang="en"
-                >IA</abbr
-              >.
-            </p>
-
-            <h3 id="travaux-mathematiques">
-              Contributions mathématiques multiples
-            </h3>
-            <p>
-              Au-delà de l'informatique, Turing apporte des contributions
-              majeures à d'autres domaines. Ses travaux sur la morphogenèse
-              (formation des structures biologiques) établissent les bases
-              mathématiques de la biologie du développement. Il développe des
-              équations différentielles expliquant comment les motifs naturels -
-              rayures du zèbre, taches du léopard - peuvent émerger
-              spontanément.
-            </p>
-            <p>
-              En logique mathématique, il résout des problèmes fondamentaux liés
-              au "problème de l'arrêt" (décidabilité), démontrant qu'il existe
-              des questions mathématiques pour lesquelles aucun algorithme ne
-              peut fournir de réponse universelle.
-            </p>
-
-            <p>
-              Malgré ses accomplissements extraordinaires, il fut persécuté pour
-              son homosexualité, alors illégale au Royaume-Uni. Condamné en
-              1952, il subit un traitement hormonal forcé plutôt que la prison.
-              Il mourut dans des circonstances tragiques le
-              <time datetime="1954-06-07">7 juin 1954</time>, officiellement par
-              empoisonnement au cyanure, mais son héritage scientifique est
-              immense.
-            </p>
-
-            <p><strong>Principales contributions :</strong></p>
-            <ul>
-              <li>
-                Conception de la machine de Turing, modèle théorique de
-                l'ordinateur
-              </li>
-              <li>
-                Décryptage des codes <span lang="de">Enigma</span> et
-                contribution décisive à la victoire alliée
-              </li>
-              <li>
-                Création du test de Turing et fondation de l'intelligence
-                artificielle
-              </li>
-              <li>
-                Travaux pionniers sur la morphogenèse et les systèmes
-                biologiques
-              </li>
-              <li>
-                Résolution de problèmes fondamentaux en logique mathématique
-              </li>
-              <li>
-                Développement des premiers programmes informatiques au
-                <abbr title="National Physical Laboratory" lang="en">NPL</abbr>
-              </li>
-            </ul>
-
-            <h3 id="reconnaissance-posthume">Reconnaissance posthume</h3>
-            <p>
-              Le génie de Turing n'a été pleinement reconnu qu'après sa mort. En
-              2009, le Premier ministre britannique Gordon Brown présente des
-              excuses officielles pour le traitement injuste qu'il a subi. En
-              2013, la reine Élisabeth <abbr title="deux">II</abbr> lui accorde
-              un pardon royal posthume. Le prix Turing, équivalent du prix Nobel
-              en informatique, porte son nom depuis 1966.
-            </p>
-
-            <blockquote
-              cite=""
-              role="complementary"
-              aria-label="Citation d'Alan Turing"
-            >
-              <p>
-                "Nous ne pouvons jamais prévoir ce que fera une machine. C'est
-                ce qui les rend si fascinantes."
-              </p>
-              <footer>— <cite>Alan Turing</cite></footer>
-            </blockquote>
-          </div>
-          <div class="character-image">
-            <img
-              src="images/alan.png"
-              alt="Portrait en noir et blanc d'Alan Turing, homme britannique aux cheveux bruns ondulés, regard pensif, portant un costume sombre typique des années 1940"
-              loading="lazy"
-              width="300"
-              height="400"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!--presentation de linus torvald -->
-
-      <section
-        class="section character-section"
-        id="linus-torvalds"
-        aria-labelledby="linus-torvalds-title"
-      >
-        <div class="character-content">
-          <div class="character-text">
-            <h2 id="linus-torvalds-title">Linus Torvalds</h2>
-            <div
-              class="character-info"
-              role="group"
-              aria-label="Informations biographiques de Linus Torvalds"
-            >
-              <p>
-                <strong>Métier(s) :</strong> Ingénieur logiciel, développeur,
-                architecte système
-              </p>
-              <p>
-                <strong>Date de naissance :</strong>
-                <time datetime="1969-12-28">28 décembre 1969</time>
-              </p>
-              <p>
-                <strong>Nationalité :</strong> Finlandaise (naturalisé américain
-                en 2010)
-              </p>
-            </div>
-            <p>
-              Linus Torvalds est un ingénieur finlandais mondialement connu pour
-              avoir créé le noyau <span lang="en">Linux</span> en 1991, alors
-              qu'il n'était qu'étudiant de 21 ans à l'Université d'Helsinki. Ce
-              noyau est au cœur de systèmes d'exploitation
-              <span lang="en">open source</span> utilisés aujourd'hui dans des
-              millions de serveurs, ordinateurs, smartphones et objets
-              connectés.
-            </p>
-
-            <h3 id="naissance-linux">
-              La naissance de Linux : une révolution accidentelle
-            </h3>
-            <p>
-              En août 1991, frustré par les limitations du système
-              d'exploitation <span lang="en">Minix</span> sur son ordinateur
-              <span lang="en">Intel 386</span>, Torvalds commence à développer
-              son propre noyau de système d'exploitation. Le
-              <time datetime="1991-08-25">25 août 1991</time>, il poste sur le
-              forum <span lang="en">Usenet</span> un message devenu historique :
-              <q lang="en"
-                >I'm doing a (free) operating system (just a hobby, won't be big
-                and professional like gnu) for 386(486) AT clones</q
-              >.
-            </p>
-            <p>
-              La première version, <span lang="en">Linux 0.01</span>, ne
-              comptait que 10 000 lignes de code. Mais contrairement aux
-              systèmes propriétaires de l'époque, Torvalds décide de publier son
-              code source sous licence libre
-              <abbr title="General Public License" lang="en">GPL</abbr>,
-              permettant à quiconque de l'étudier, le modifier et le
-              redistribuer.
-            </p>
-
-            <h3 id="developpement-collaboratif">
-              Un modèle de développement révolutionnaire
-            </h3>
-            <p>
-              L'innovation majeure de Torvalds ne réside pas seulement dans le
-              code, mais dans sa méthode de développement. Il établit un modèle
-              de collaboration distribuée où des milliers de développeurs
-              contribuent simultanément. Cette approche, surnommée
-              <q lang="en">release early, release often</q>, permet une
-              évolution rapide et une correction efficace des bugs.
-            </p>
-            <p>
-              Torvalds agit comme "dictateur bienveillant" du projet, prenant
-              les décisions finales sur les modifications intégrées au noyau
-              principal. Son style de gestion, parfois controversé mais
-              efficace, a maintenu la cohérence architecturale de
-              <span lang="en">Linux</span> pendant plus de 30 ans.
-            </p>
-
-            <h3 id="impact-technologique">Impact technologique mondial</h3>
-            <p>
-              Aujourd'hui, <span lang="en">Linux</span> fait fonctionner plus de
-              70% des serveurs web mondiaux, 100% des 500 supercalculateurs les
-              plus puissants, et plus de 2,5 milliards d'appareils
-              <span lang="en">Android</span>. Le noyau
-              <span lang="en">Linux</span> compte désormais plus de 28 millions
-              de lignes de code, fruit du travail de plus de 20 000 développeurs
-              de centaines d'entreprises.
-            </p>
-            <p>
-              Les distributions <span lang="en">Linux</span> -
-              <span lang="en">Ubuntu</span>, <span lang="en">Red Hat</span>,
-              <span lang="en">SUSE</span>, <span lang="en">Debian</span> -
-              alimentent l'infrastructure d'internet, des clouds
-              <span lang="en">Amazon Web Services</span> et
-              <span lang="en">Google Cloud</span> aux systèmes embarqués des
-              voitures connectées.
-            </p>
-
-            <h3 id="creation-git">
-              Git : révolutionner la gestion de versions
-            </h3>
-            <p>
-              En 2005, face aux limitations des outils existants pour gérer le
-              développement de <span lang="en">Linux</span>, Torvalds crée
-              <span lang="en">Git</span> en seulement deux semaines. Ce système
-              de contrôle de versions distribué révolutionne la collaboration
-              logicielle en permettant à chaque développeur de travailler de
-              manière autonome tout en synchronisant efficacement les
-              modifications.
-            </p>
-            <p>
-              <span lang="en">Git</span> devient rapidement l'outil de
-              référence, utilisé par des millions de projets. La plateforme
-              <span lang="en">GitHub</span>, construite sur
-              <span lang="en">Git</span>, héberge aujourd'hui plus de 200
-              millions de dépôts de code, faisant de l'outil de Torvalds l'épine
-              dorsale du développement logiciel moderne.
-            </p>
-
-            <h3 id="philosophie-logiciel-libre">
-              Philosophie du logiciel libre
-            </h3>
-            <p>
-              Torvalds défend une approche pragmatique du logiciel libre,
-              distincte de l'approche plus idéologique de Richard Stallman. Pour
-              lui, l'<span lang="en">open source</span> est avant tout une
-              méthode de développement supérieure qui produit de meilleurs
-              logiciels grâce à la transparence et la collaboration massive.
-            </p>
-            <p>
-              Cette philosophie influence profondément l'industrie
-              technologique. Des géants comme <span lang="en">Google</span>,
-              <span lang="en">Facebook</span>, <span lang="en">Netflix</span> et
-              <span lang="en">Tesla</span> contribuent activement au
-              développement de <span lang="en">Linux</span>, démontrant que
-              l'<span lang="en">open source</span> peut être économiquement
-              viable à grande échelle.
-            </p>
-
-            <h3 id="reconnaissance-prix">Reconnaissance et récompenses</h3>
-            <p>
-              Les contributions de Torvalds sont mondialement reconnues. Il
-              reçoit le prix
-              <span lang="en">Millennium Technology Prize</span> en 2012
-              (surnommé le "Nobel de la technologie"), ainsi que de nombreuses
-              distinctions académiques. Il est nommé
-              <span lang="en">Fellow</span> de la
-              <span lang="en">Computer History Museum</span> et reçoit des
-              doctorats honorifiques de plusieurs universités prestigieuses.
-            </p>
-            <p>
-              Depuis 2007, il travaille pour la
-              <span lang="en">Linux Foundation</span>, se consacrant
-              exclusivement au développement du noyau
-              <span lang="en">Linux</span>. Son influence dépasse la technique :
-              il a inspiré une génération de développeurs et démocratisé l'accès
-              aux outils informatiques.
-            </p>
-
-            <p><strong>Principales contributions :</strong></p>
-            <ul>
-              <li>
-                Création et maintenance du noyau
-                <span lang="en">Linux</span> (1991-présent)
-              </li>
-              <li>
-                Développement de <span lang="en">Git</span>, système de contrôle
-                de versions (2005)
-              </li>
-              <li>
-                Établissement du modèle de développement collaboratif distribué
-              </li>
-              <li>
-                Promotion pragmatique du logiciel libre et de l'<span lang="en"
-                  >open source</span
-                >
-              </li>
-              <li>
-                Démocratisation de l'accès aux systèmes d'exploitation
-                performants
-              </li>
-              <li>
-                Influence sur l'architecture des systèmes modernes (<span
-                  lang="en"
-                  >cloud computing</span
-                >, <abbr title="Internet des Objets">IoT</abbr>)
-              </li>
-            </ul>
-
-            <h3 id="heritage-moderne">Héritage et impact moderne</h3>
-            <p>
-              L'héritage de Torvalds transcende la technologie. Il a prouvé
-              qu'un individu peut déclencher une révolution technologique
-              mondiale et que la collaboration ouverte peut surpasser les
-              modèles propriétaires traditionnels.
-              <span lang="en">Linux</span> et
-              <span lang="en">Git</span> continuent d'évoluer, alimentant
-              l'innovation dans l'intelligence artificielle, l'informatique
-              quantique et les technologies émergentes.
-            </p>
-
-            <blockquote
-              cite=""
-              role="complementary"
-              aria-label="Citation de Linus Torvalds"
-            >
-              <p lang="en">"Talk is cheap. Show me the code."</p>
-              <p>
-                <em>(Les paroles ne coûtent rien. Montrez-moi le code.)</em>
-              </p>
-              <footer>— <cite>Linus Torvalds</cite></footer>
-            </blockquote>
-          </div>
-          <div class="character-image">
-            <img
-              src="images/linus.png"
-              alt="Portrait de Linus Torvalds, homme finlandais aux cheveux bruns et lunettes, souriant, portant un t-shirt décontracté, incarnant l'esprit décontracté de la communauté open source"
-              loading="lazy"
-              width="300"
-              height="400"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!--presentation de grace hopper -->
-
-      <section
-        class="section character-section"
-        id="grace-hopper"
-        aria-labelledby="grace-hopper-title"
-      >
-        <div class="character-content">
-          <div class="character-text">
-            <h2 id="grace-hopper-title">Grace Hopper</h2>
-            <div
-              class="character-info"
-              role="group"
-              aria-label="Informations biographiques de Grace Hopper"
-            >
-              <p>
-                <strong>Métier(s) :</strong> Informaticienne, amirale de la
-                marine, enseignante
-              </p>
-              <p>
-                <strong>Date de naissance :</strong>
-                <time datetime="1906-12-09">9 décembre 1906</time>
-              </p>
-              <p>
-                <strong>Date de décès :</strong>
-                <time datetime="1992-01-01">1<sup>er</sup> janvier 1992</time>
-              </p>
-              <p>
-                <strong>Grade militaire :</strong> Amirale (<span lang="en"
-                  >Rear Admiral</span
-                >)
-              </p>
-              <p>
-                <strong>Surnoms :</strong> <q lang="en">Amazing Grace</q>,
-                <q lang="en">Grandma COBOL</q>
-              </p>
-            </div>
-            <p>
-              Grace Murray Hopper était une informaticienne et amirale de la
-              marine américaine, pionnière de la programmation informatique.
-              Elle fut l'une des premières programmeuses du
-              <span lang="en">Harvard Mark I</span>, un des tout premiers
-              ordinateurs électromécaniques, et est surtout connue pour avoir
-              développé le premier compilateur, rendant possible les langages de
-              programmation proches du langage humain.
-            </p>
-
-            <h3 id="harvard-mark-i">Les débuts avec Harvard Mark I</h3>
-            <p>
-              En 1944, Grace Hopper rejoint l'équipe du professeur Howard Aiken
-              à l'Université Harvard pour travailler sur le
-              <span lang="en">Mark I</span>, un calculateur électromécanique de
-              17 mètres de long pesant 5 tonnes. Elle devient rapidement l'une
-              des principales programmeuses de cette machine révolutionnaire,
-              développant des sous-routines et des programmes pour des calculs
-              balistiques destinés à la marine.
-            </p>
-            <p>
-              Son travail sur le <span lang="en">Mark I</span> lui permet de
-              maîtriser les subtilités de la programmation en langage machine et
-              de comprendre les défis fondamentaux de l'informatique naissante.
-              Elle rédige le premier manuel d'utilisation de l'ordinateur,
-              établissant les bases de la documentation technique moderne.
-            </p>
-
-            <h3 id="invention-compilateur">
-              L'invention révolutionnaire du compilateur
-            </h3>
-            <p>
-              En 1947, travaillant pour la société
-              <span lang="en">Eckert-Mauchly Computer Corporation</span>, Hopper
-              développe le concept révolutionnaire du compilateur. Frustrée par
-              la complexité de la programmation en code machine, elle imagine un
-              programme capable de traduire automatiquement des instructions
-              écrites dans un langage proche de l'anglais en code machine.
-            </p>
-            <p>
-              Son premier compilateur, l'<span lang="en">A-0 System</span>
-              (1951), permet aux programmeurs d'écrire des programmes en
-              utilisant des mots anglais plutôt que des séquences de chiffres
-              binaires. Cette innovation révolutionnaire ouvre la voie à tous
-              les langages de programmation modernes. Elle développe ensuite
-              l'<span lang="en">A-1</span> et l'<span lang="en">A-2</span>,
-              améliorant constamment les capacités de compilation.
-            </p>
-
-            <h3 id="cobol-langage">COBOL : démocratiser la programmation</h3>
-            <p>
-              En 1959, Hopper dirige le comité qui développe
-              <abbr title="Common Business-Oriented Language" lang="en"
-                >COBOL</abbr
-              >, un langage de programmation destiné aux applications
-              commerciales. Sa vision : créer un langage si proche de l'anglais
-              que les gestionnaires d'entreprise pourraient comprendre et même
-              écrire des programmes.
-            </p>
-            <p>
-              <span lang="en">COBOL</span> révolutionne l'informatique de
-              gestion avec sa syntaxe explicite :
-              <code lang="en">ADD SALARY TO TOTAL-PAYROLL</code> plutôt que des
-              codes cryptiques. Le langage devient rapidement le standard pour
-              les applications bancaires, financières et administratives. Encore
-              aujourd'hui, plus de 60 ans après sa création,
-              <span lang="en">COBOL</span> fait fonctionner 95% des
-              distributeurs automatiques et traite des trillions de dollars de
-              transactions quotidiennes.
-            </p>
-
-            <h3 id="bug-informatique">La légende du premier "bug"</h3>
-            <p>
-              Le <time datetime="1947-09-09">9 septembre 1947</time>,
-              travaillant sur le <span lang="en">Harvard Mark II</span>, Grace
-              Hopper découvre qu'un papillon de nuit coincé dans un relais
-              électromécanique cause un dysfonctionnement. Elle colle
-              soigneusement l'insecte dans le carnet de bord avec la note :
-              <q lang="en">First actual case of bug being found</q>.
-            </p>
-            <p>
-              Bien qu'elle n'ait pas inventé le terme "bug" (utilisé depuis le
-              <abbr title="dix-neuvième siècle">XIX<sup>e</sup> siècle</abbr>
-              pour désigner des défauts techniques), cet incident popularise
-              l'expression dans le domaine informatique. Le carnet de bord
-              original est conservé au
-              <span lang="en"
-                >Smithsonian National Museum of American History</span
-              >.
-            </p>
-
-            <h3 id="innovations-techniques">
-              Innovations techniques et conceptuelles
-            </h3>
-            <p>
-              Au-delà du compilateur et de <span lang="en">COBOL</span>, Hopper
-              développe de nombreuses innovations techniques. Elle conçoit des
-              méthodes de validation automatique des programmes, des systèmes de
-              gestion d'erreurs et des techniques d'optimisation de code. Ses
-              travaux sur la standardisation des langages de programmation
-              établissent les bases de la portabilité logicielle.
-            </p>
-            <p>
-              Elle invente également le concept de "sous-routine" réutilisable,
-              permettant aux programmeurs de créer des bibliothèques de
-              fonctions. Cette approche modulaire révolutionne l'efficacité du
-              développement logiciel et influence l'architecture des programmes
-              modernes.
-            </p>
-
-            <h3 id="carriere-militaire">Carrière militaire exceptionnelle</h3>
-            <p>
-              Parallèlement à ses contributions techniques, Hopper mène une
-              carrière militaire remarquable. Recrutée dans la
-              <span lang="en">WAVES</span> (femmes réservistes de la marine) en
-              1943, elle gravit les échelons jusqu'au grade d'amirale. À 79 ans,
-              elle devient la doyenne de la marine américaine en service actif.
-            </p>
-            <p>
-              Son rôle dans la marine ne se limite pas à la technique : elle
-              forme des milliers d'officiers à l'informatique, établit des
-              standards de sécurité pour les systèmes militaires et conseille le
-              Pentagone sur l'évolution technologique. Sa vision stratégique
-              influence la modernisation informatique de l'armée américaine.
-            </p>
-
-            <h3 id="pedagogie-vulgarisation">Pédagogie et vulgarisation</h3>
-            <p>
-              Hopper excelle dans la transmission du savoir. Ses conférences,
-              mêlant rigueur technique et humour, démystifient l'informatique
-              auprès du grand public. Elle utilise des analogies marquantes :
-              pour expliquer la nanoseconde, elle montre un fil de 30
-              centimètres représentant la distance parcourue par la lumière en
-              une nanoseconde.
-            </p>
-            <p>
-              Elle encourage particulièrement les femmes à s'orienter vers
-              l'informatique, défendant une approche inclusive bien avant que
-              cette question ne devienne centrale. Ses mentorats inspirent une
-              génération de femmes ingénieures et informaticiennes.
-            </p>
-
-            <p><strong>Principales contributions :</strong></p>
-            <ul>
-              <li>
-                Développement du premier compilateur informatique (<span
-                  lang="en"
-                  >A-0 System</span
-                >, 1951)
-              </li>
-              <li>
-                Co-création et promotion du langage
-                <span lang="en">COBOL</span> (1959)
-              </li>
-              <li>
-                Programmation pionnière sur
-                <span lang="en">Harvard Mark I</span> et
-                <span lang="en">Mark II</span>
-              </li>
-              <li>
-                Invention des sous-routines réutilisables et de la programmation
-                modulaire
-              </li>
-              <li>
-                Standardisation des langages de programmation et portabilité
-                logicielle
-              </li>
-              <li>
-                Formation de milliers d'informaticiens dans la marine américaine
-              </li>
-              <li>Vulgarisation et démocratisation de l'informatique</li>
-              <li>
-                Pionnier de la documentation technique et des manuels
-                d'utilisation
-              </li>
-            </ul>
-
-            <h3 id="reconnaissance-heritage">Reconnaissance et héritage</h3>
-            <p>
-              Grace Hopper reçoit de nombreuses distinctions : la
-              <span lang="en">National Medal of Technology</span> (1991), plus
-              de 40 doctorats honorifiques, et devient la première femme nommée
-              <span lang="en">Distinguished Fellow</span> de la
-              <span lang="en">British Computer Society</span>. Un destroyer de
-              la marine américaine, l'<span lang="en">USS Hopper</span>, porte
-              son nom.
-            </p>
-            <p>
-              La conférence <span lang="en">Grace Hopper Celebration</span>,
-              plus grand rassemblement mondial de femmes techniciennes, perpétue
-              son héritage. Son influence dépasse la technique : elle a prouvé
-              que l'innovation naît souvent de la remise en question des
-              pratiques établies.
-            </p>
-
-            <blockquote
-              cite=""
-              role="complementary"
-              aria-label="Citation de Grace Hopper"
-            >
-              <p lang="en">
-                "The most dangerous phrase in the language is: 'We've always
-                done it this way.'"
-              </p>
-              <p>
-                <em
-                  >(La phrase la plus dangereuse qui soit est : "Nous avons
-                  toujours fait comme ça.")</em
-                >
-              </p>
-              <footer>— <cite>Grace Hopper</cite></footer>
-            </blockquote>
-          </div>
-          <div class="character-image">
-            <img
-              src="images/grace.png"
-              alt="Portrait de Grace Hopper en uniforme de la marine américaine, femme élégante aux cheveux gris, regard déterminé, incarnant l'autorité et la compétence d'une pionnière de l'informatique et amirale respectée"
-              loading="lazy"
-              width="300"
-              height="400"
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Overlay de flou -->
-    <div class="main-content-overlay"></div>
-
-    <!-- Conteneur d'images pour personnages -->
-    <div id="character-image-container">
-      <img id="character-image" src="about:blank" alt="Image du personnage" />
-    </div>
-
-    <!-- Conteneur d'images pour quiz -->
-    <div id="quiz-image-container">
-      <img id="quiz-image" src="about:blank" alt="Image du quiz" />
-    </div>
-
-    <!-- Menu latéral -->
-    <div id="sideMenu" class="side-menu" role="navigation" aria-hidden="true">
-      <div class="nav-menu">
-        <button class="nav-btn" id="btn-personnages">Personnages</button>
-        <button class="nav-btn">Jouer</button>
-        <button class="nav-btn">Contact</button>
-        <button class="close-btn" aria-label="Fermer le menu de navigation">×</button>
+      <!-- Conteneur d'images pour personnages -->
+      <div id="character-image-container">
+        <img id="character-image" src="about:blank" alt="Image du personnage" />
       </div>
 
-      <!-- Liste de personnages à l'intérieur du menu -->
-      <div
-        id="character-list"
-        style="display: none; padding: 1rem; color: white"
-      >
-        <ul
-          id="characters"
-          style="list-style: none; padding: 0; margin-top: 1rem"
+      <!-- Conteneur d'images pour quiz -->
+      <div id="quiz-image-container">
+        <img id="quiz-image" src="about:blank" alt="Image du quiz" />
+      </div>
+
+      <!-- Menu latéral -->
+      <div id="sideMenu" class="side-menu" role="navigation" aria-hidden="true">
+        <div class="nav-menu">
+          <button class="nav-btn" id="btn-personnages">Personnages</button>
+          <button class="nav-btn">Jouer</button>
+          <button class="nav-btn">Contact</button>
+          <button class="close-btn" aria-label="Fermer le menu de navigation">
+            ×
+          </button>
+        </div>
+
+        <!-- Liste de personnages à l'intérieur du menu -->
+        <div
+          id="character-list"
+          style="display: none; padding: 1rem; color: white"
         >
-          <!-- JS remplira cette liste -->
-        </ul>
-      </div>
-
-      <!-- Liste de quiz à l'intérieur du menu -->
-      <div id="quiz-list" style="display: none; padding: 1rem; color: white">
-        <ul id="quizzes" style="list-style: none; padding: 0; margin-top: 1rem">
-          <!-- JS remplira cette liste -->
-        </ul>
-      </div>
-
-      <div id="contact-info" style="display: none; padding: 1rem; color: white">
-        <p style="margin-bottom: 1rem">
-          Pour toute question, suggestion ou collaboration, n'hésitez pas à nous
-          contacter :
-        </p>
-
-        <div style="margin-bottom: 1.5rem">
-          <h4>Amouchas Ahcene</h4>
-          <p>
-            <i class="fas fa-envelope fa-2x"></i>
-            <a href="mailto:amouchasahcene11@gmail.com" style="color: #00bfff"
-              >amouchasahcene11@gmail.com</a
-            >
-          </p>
-          <p>
-            <i class="fab fa-github fa-2x"></i>
-            <a
-              href="https://github.com/ahcene-11"
-              target="_blank"
-              style="color: #00bfff"
-              >github.com/ahcene-11</a
-            >
-          </p>
-          <p>
-            <i class="fab fa-linkedin fa-2x"></i>
-            <a
-              href="https://www.linkedin.com/in/ahc%C3%A8ne-amouchas-a3037a327/"
-              target="_blank"
-              style="color: #00bfff"
-              >www.linkedin.com</a
-            >
-          </p>
+          <ul
+            id="characters"
+            style="list-style: none; padding: 0; margin-top: 1rem"
+          >
+            <!-- JS remplira cette liste -->
+          </ul>
         </div>
 
-        <div>
-          <h4>Djouani Celia</h4>
-          <p>
-            <i class="fas fa-envelope fa-2x"></i>
-            <a href="mailto:celia.djouani@email.com" style="color: #00bfff"
-              >celia.djouani@gmail.com</a
-            >
+        <!-- Liste de quiz à l'intérieur du menu -->
+        <div id="quiz-list" style="display: none; padding: 1rem; color: white">
+          <ul
+            id="quizzes"
+            style="list-style: none; padding: 0; margin-top: 1rem"
+          >
+            <!-- JS remplira cette liste -->
+          </ul>
+        </div>
+
+        <div
+          id="contact-info"
+          style="display: none; padding: 1rem; color: white"
+        >
+          <p style="margin-bottom: 1rem">
+            Pour toute question, suggestion ou collaboration, n'hésitez pas à
+            nous contacter :
           </p>
-          <p>
-            <i class="fab fa-github fa-2x"></i>
-            <a
-              href="https://github.com/celiaDjn"
-              target="_blank"
-              style="color: #00bfff"
-              >github.com/celiaDjn</a
-            >
-          </p>
-          <p>
-            <i class="fab fa-linkedin fa-2x"></i>
-            <a
-              href="https://www.linkedin.com/in/celiadjouani"
-              target="_blank"
-              style="color: #00bfff"
-              >linkedin.com/in/celiaDjnouani</a
-            >
-          </p>
+
+          <div style="margin-bottom: 1.5rem">
+            <h4>Amouchas Ahcene</h4>
+            <p>
+              <i class="fas fa-envelope fa-2x"></i>
+              <a href="mailto:amouchasahcene11@gmail.com" style="color: #00bfff"
+                >amouchasahcene11@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-github fa-2x"></i>
+              <a
+                href="https://github.com/ahcene-11"
+                target="_blank"
+                style="color: #00bfff"
+                >github.com/ahcene-11</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-linkedin fa-2x"></i>
+              <a
+                href="https://www.linkedin.com/in/ahc%C3%A8ne-amouchas-a3037a327/"
+                target="_blank"
+                style="color: #00bfff"
+                >www.linkedin.com</a
+              >
+            </p>
+          </div>
+
+          <div>
+            <h4>Djouani Celia</h4>
+            <p>
+              <i class="fas fa-envelope fa-2x"></i>
+              <a href="mailto:celia.djouani@email.com" style="color: #00bfff"
+                >celia.djouani@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-github fa-2x"></i>
+              <a
+                href="https://github.com/celiaDjn"
+                target="_blank"
+                style="color: #00bfff"
+                >github.com/celiaDjn</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-linkedin fa-2x"></i>
+              <a
+                href="https://www.linkedin.com/in/celiadjouani"
+                target="_blank"
+                style="color: #00bfff"
+                >linkedin.com/in/celiaDjnouani</a
+              >
+            </p>
+          </div>
         </div>
       </div>
-    </div>
     </main>
     <footer>
       <div class="social">

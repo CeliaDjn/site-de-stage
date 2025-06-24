@@ -22,14 +22,16 @@ if ($_SESSION[$session_key_index] >= $totalQuestions || $_SESSION[$session_key_i
     // Réinitialiser pour ce niveau
     unset($_SESSION[$session_key_score]);
     unset($_SESSION[$session_key_index]);
-    ?>
+?>
     <!DOCTYPE html>
     <html lang="fr">
+
     <head>
         <meta charset="UTF-8">
         <title>Résultat - <?= ucfirst($niveau) ?></title>
         <link rel="stylesheet" href="quiz.css">
     </head>
+
     <body>
         <div class="grid-bg">
             <video autoplay loop muted class="background-video">
@@ -44,23 +46,30 @@ if ($_SESSION[$session_key_index] >= $totalQuestions || $_SESSION[$session_key_i
             </div>
         </div>
     </body>
+
     </html>
-    <?php
+<?php
     exit;
 }
+if (isset($_GET['next']) && $_GET['next'] == 1) {
+    $_SESSION[$session_key_index]++;
+    header("Location: quiz.php?niveau=" . urlencode($niveau));
+    exit;
+}
+
 
 // Vérification de la réponse si le formulaire est soumis
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['option'])) {
     $selected = $_POST['option'];
     $currentQuestion = $questions[$_SESSION[$session_key_index]];
-    
-    if ($selected === $currentQuestion['correct_option']) {
+
+    $isCorrect = ($selected === $currentQuestion['correct_option']);
+    if ($isCorrect) {
         $_SESSION[$session_key_score]++;
     }
-    $_SESSION[$session_key_index]++;
-    header("Location: quiz.php?niveau=" . urlencode($niveau));
-    exit;
+    $showFeedback = true;
 }
+
 
 // S'il n'y a pas assez de questions dans la BDD
 if (empty($questions)) {
@@ -72,34 +81,36 @@ $currentQuestion = $questions[$_SESSION[$session_key_index]];
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title><?= ucfirst($niveau) ?> - Question <?= $_SESSION[$session_key_index] + 1 ?></title>
     <link rel="stylesheet" href="quiz.css">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
-     <header>
+    <header>
         <button
-          class="back-btn"
-          onclick="window.location.href='selection-quiz.html'"
-          aria-label="Retour en arrière"
-        >
-          <i class="fas fa-arrow-left"></i>
+            class="back-btn"
+            onclick="window.location.href='selection-quiz.html'"
+            aria-label="Retour en arrière">
+            <i class="fas fa-arrow-left"></i>
         </button>
     </header>
     <div class="grid-bg">
         <video autoplay loop muted class="background-video">
             <source src="neon.mp4" type="video/mp4">
         </video>
+
+
         <div class="my-form">
             <h1><?= strtoupper($niveau) ?> LOGIQUE</h1>
             <h2>Question <?= $_SESSION[$session_key_index] + 1 ?> / 6</h2>
             <p><?= htmlspecialchars($currentQuestion['question']) ?></p>
-            
+
             <form method="POST">
                 <div class="options">
                     <div class="option">
@@ -121,11 +132,32 @@ $currentQuestion = $questions[$_SESSION[$session_key_index]];
                 </div>
                 <input type="submit" value="Valider" class="btn">
             </form>
-            
+
             <div class="progress">
                 <p>Score actuel : <?= $_SESSION[$session_key_score] ?> / 6</p>
             </div>
+            <?php if (isset($showFeedback)): ?>
+                <div class="feedback">
+                    <?php if ($isCorrect): ?>
+                        <p class="correct">✅ Bonne réponse !</p>
+                    <?php else: ?>
+                        <p class="wrong">❌ Mauvaise réponse.</p>
+                        <p>La bonne réponse était :
+                            <strong>
+                                <?= htmlspecialchars($currentQuestion['option_' . strtolower($currentQuestion['correct_option'])]) ?>
+                            </strong>
+                        </p>
+                    <?php endif; ?>
+                </div>
+
+                <script>
+                    setTimeout(function() {
+                        window.location.href = "quiz.php?niveau=<?= urlencode($niveau) ?>&next=1";
+                    }, 4000); // 3 secondes
+                </script>
+            <?php endif; ?>
         </div>
     </div>
 </body>
+
 </html>
